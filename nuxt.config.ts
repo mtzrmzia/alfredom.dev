@@ -21,6 +21,8 @@ export default defineNuxtConfig({
     '@nuxt/ui',
     // https://fonts.nuxt.com/
     '@nuxt/fonts',
+    // https://image.nuxt.com/
+    '@nuxt/image',
   ],
   colorMode: {
     classSuffix: '',
@@ -31,9 +33,15 @@ export default defineNuxtConfig({
   fonts: {
     families: [
       {
-        name: 'Nunito Sans',
+        name: 'Inter',
       },
     ],
     provider: 'google',
+  },
+  image: {
+    provider: 'imagekit',
+    imagekit: {
+      baseURL: 'https://ik.imagekit.io/alfredom',
+    },
   },
 });

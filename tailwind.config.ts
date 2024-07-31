@@ -5,7 +5,7 @@ export default <Partial<Config>>{
   theme: {
     extend: {
       fontFamily: {
-        sans: ['"Nunito Sans"', ...defaultTheme.fontFamily.sans],
+        sans: ['"Inter"', ...defaultTheme.fontFamily.sans],
       },
     },
   },

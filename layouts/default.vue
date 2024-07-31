@@ -1,6 +1,9 @@
 <template>
-  <div class="h-full flex flex-col bg-primary-500">
-    <slot />
+  <div class="h-full flex flex-col">
+    <Navbar />
+    <main>
+      <slot />
+    </main>
   </div>
 </template>
 
