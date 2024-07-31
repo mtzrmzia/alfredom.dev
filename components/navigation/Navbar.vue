@@ -1,6 +1,6 @@
 <template>
   <header
-    class="sticky top-0 z-10 border-b-[1px] border-solid border-gray-100 bg-white/75 py-2 dark:border-gray-900 dark:bg-black/75 sm:py-3 backdrop-blur-xl"
+    class="sticky top-0 z-10 border-b border-solid border-gray-100 bg-white/75 py-2 dark:border-gray-900 dark:bg-black/75 sm:py-3 backdrop-blur-xl h-[61px]"
   >
     <div class="m-[0_auto] max-w-4xl px-6 sm:px-4">
       <nav class="flex items-center justify-between font-semibold">
@@ -8,7 +8,7 @@
           <MainAvatar />
         </NuxtLink>
         <div
-          class="flex flex-row-reverse gap-3 items-center sm:flex-row sm:gap-4"
+          class="flex flex-row-reverse gap-3 items-center sm:flex-row sm:gap-4 h-[36px]"
         >
           <ul class="hidden grid-flow-col gap-6 text-sm font-medium sm:grid">
             <li>
@@ -41,7 +41,7 @@
             variant="ghost"
             color="gray"
             size="md"
-            trailing-icon="i-solar-hamburger-menu-line-duotone"
+            trailing-icon="solar:hamburger-menu-line-duotone"
             @click="sidebarIsOpen = true"
           />
           <ColorModeSelect />

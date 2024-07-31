@@ -6,7 +6,7 @@
         variant="ghost"
         color="gray"
         size="xl"
-        trailing-icon="i-heroicons-x-mark-16-solid"
+        trailing-icon="heroicons:x-mark-16-solid"
         @click="modelValue = false"
       />
     </div>

@@ -17,7 +17,7 @@
           <div class="absolute flex inset-y-0 items-center left-0 pl-2">
             <UIcon
               v-if="isSelected(item.class)"
-              name="i-heroicons-check-16-solid"
+              name="heroicons:check-16-solid"
               class="w-5 h-5"
             />
           </div>
@@ -34,6 +34,8 @@
 </template>
 
 <script setup lang="ts">
+import { useFavicon } from '@vueuse/core';
+
 defineOptions({
   name: 'ColorModeSelect',
 });
@@ -41,9 +43,13 @@ const colorMode = useColorMode();
 
 const iconMode = computed(() => {
   return colorMode.value === 'light'
-    ? 'i-solar-sun-2-bold-duotone'
-    : 'i-solar-moon-bold-duotone';
+    ? 'solar:sun-2-bold-duotone'
+    : 'solar:moon-bold-duotone';
 });
+
+const favicon = computed((): string =>
+  colorMode.value === 'dark' ? '/favicon-dark.png' : '/favicon-light.png',
+);
 
 const items = [
   [
@@ -74,4 +80,6 @@ const items = [
 function isSelected(value: string) {
   return colorMode.preference === value;
 }
+
+useFavicon(favicon);
 </script>
