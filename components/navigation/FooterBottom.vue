@@ -1,5 +1,7 @@
 <template>
-  <footer class="border-t border-solid border-gray-100 dark:border-gray-900">
+  <footer
+    class="border-t border-solid border-gray-100 dark:border-gray-900 mt-8"
+  >
     <div class="m-[0_auto] max-w-4xl px-6 sm:px-4">
       <div
         class="flex items-center justify-between px-1 py-4 text-sm text-gray-500"

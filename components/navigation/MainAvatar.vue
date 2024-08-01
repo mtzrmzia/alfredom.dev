@@ -1,22 +1,16 @@
 <template>
-  <ClientOnly>
-    <NuxtImg
-      :src="avatarName"
-      format="webp"
-      alt="alfredo-avatar"
-      :class="[classes, 'rounded-full']"
-      :placeholder="placeholder"
-    />
-  </ClientOnly>
+  <NuxtImg
+    :src="avatarName"
+    format="webp"
+    alt="alfredo-avatar"
+    :class="[classes, 'rounded-full']"
+    placeholder
+  />
 </template>
 <script setup lang="ts">
 const colorMode = useColorMode();
 
 defineProps({
-  placeholder: {
-    type: Boolean,
-    default: false,
-  },
   classes: {
     type: String,
     default: 'h-8 w-8',

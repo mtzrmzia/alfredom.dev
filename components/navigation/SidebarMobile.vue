@@ -17,15 +17,19 @@
         <NuxtLink
           to="/"
           class="text-gray-900 dark:text-white hover:opacity-60 transition-opacity"
-          >Home</NuxtLink
+          @click.self="closeSidebar"
         >
+          Home
+        </NuxtLink>
       </li>
       <li>
         <NuxtLink
-          to="/"
+          to="/about"
           class="text-gray-900 dark:text-white hover:opacity-60 transition-opacity"
-          >About</NuxtLink
+          @click.self="closeSidebar"
         >
+          About
+        </NuxtLink>
       </li>
       <li>
         <NuxtLink
@@ -69,4 +73,10 @@ watch(
   },
   { immediate: true },
 );
+
+function closeSidebar() {
+  setTimeout(() => {
+    modelValue.value = false;
+  }, 200);
+}
 </script>

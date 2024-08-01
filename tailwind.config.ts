@@ -20,6 +20,7 @@ export default <Partial<Config>>{
       },
       fontFamily: {
         sans: ['"Inter"', ...defaultTheme.fontFamily.sans],
+        gloria: ['"Gloria Hallelujah"', ...defaultTheme.fontFamily.sans],
       },
     },
   },

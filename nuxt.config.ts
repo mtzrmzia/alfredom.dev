@@ -7,7 +7,21 @@ export default defineNuxtConfig({
     },
     host: 'alfredom.dev.test',
   },
-
+  experimental: {
+    typedPages: true,
+  },
+  app: {
+    head: {
+      htmlAttrs: {
+        lang: 'es-MX',
+      },
+      bodyAttrs: {
+        class: 'antialiased h-full',
+      },
+    },
+    pageTransition: { name: 'fade', mode: 'out-in' },
+    layoutTransition: { name: 'fade', mode: 'out-in' },
+  },
   compatibilityDate: '2024-04-03',
   devtools: { enabled: true },
   components: [
@@ -34,6 +48,9 @@ export default defineNuxtConfig({
     families: [
       {
         name: 'Inter',
+      },
+      {
+        name: 'Gloria Hallelujah',
       },
     ],
     provider: 'google',

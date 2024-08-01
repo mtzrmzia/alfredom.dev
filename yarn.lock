@@ -763,6 +763,13 @@
   dependencies:
     "@iconify/types" "*"
 
+"@iconify-json/ri@^1.1.21":
+  version "1.1.21"
+  resolved "https://registry.yarnpkg.com/@iconify-json/ri/-/ri-1.1.21.tgz#16882230c827c29538d7ff4fd502930698cfb32d"
+  integrity sha512-ssU2CRaB4T83Q3cncCZtITholhYkH6gEL5XLmdMII6Xzn8bTCpDCkt+HdX4URc24uUMD0PGIaNLJUIAgdfLMjQ==
+  dependencies:
+    "@iconify/types" "*"
+
 "@iconify-json/solar@^1.1.9":
   version "1.1.9"
   resolved "https://registry.yarnpkg.com/@iconify-json/solar/-/solar-1.1.9.tgz#a7eba734d0ff02457142334af25a937b9aa732d9"

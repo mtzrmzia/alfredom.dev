@@ -13,7 +13,7 @@
           <ul class="hidden grid-flow-col gap-6 text-sm font-medium sm:grid">
             <li>
               <NuxtLink
-                to="/"
+                to="/about"
                 class="text-gray-900 dark:text-white hover:opacity-60 transition-opacity"
               >
                 About
