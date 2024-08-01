@@ -28,6 +28,6 @@ useHead({
 
 .fade-enter-active,
 .fade-leave-active {
-  transition: opacity 0.2s ease-out;
+  transition: opacity 150ms ease-out;
 }
 </style>

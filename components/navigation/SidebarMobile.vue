@@ -1,5 +1,5 @@
 <template>
-  <USlideover v-model="modelValue" :ui="{ width: 'max-w-screen' }">
+  <USlideover v-model="modelValue" :ui="slideoverUI">
     <div class="absolute right-0 mx-6 my-2">
       <UButton
         class="rounded-full"
@@ -60,6 +60,24 @@ const modelValue = defineModel({
   default: true,
 });
 
+const slideoverUI = {
+  width: 'max-w-screen',
+  overlay: {
+    transition: {
+      enter: 'ease-in-out duration-150',
+      enterFrom: 'opacity-0',
+      enterTo: 'opacity-100',
+      leave: 'ease-in-out duration-150',
+      leaveFrom: 'opacity-100',
+      leaveTo: 'opacity-0',
+    },
+  },
+  transition: {
+    enter: 'transform transition ease-in-out duration-150',
+    leave: 'transform transition ease-in-out duration-150',
+  },
+};
+
 const breakpoints = useBreakpoints(breakpointsTailwind);
 
 const smaller = breakpoints.greaterOrEqual('sm');
@@ -77,6 +95,6 @@ watch(
 function closeSidebar() {
   setTimeout(() => {
     modelValue.value = false;
-  }, 200);
+  }, 160);
 }
 </script>
