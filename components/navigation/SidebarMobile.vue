@@ -35,15 +35,18 @@
         <NuxtLink
           to="/"
           class="text-gray-900 dark:text-white hover:opacity-60 transition-opacity"
-          >Blog</NuxtLink
         >
+          Blog
+        </NuxtLink>
       </li>
       <li>
         <NuxtLink
-          to="/"
+          to="/photos"
           class="text-gray-900 dark:text-white hover:opacity-60 transition-opacity"
-          >Photos</NuxtLink
+          @click.self="closeSidebar"
         >
+          Photos
+        </NuxtLink>
       </li>
     </ul>
   </USlideover>
@@ -51,6 +54,7 @@
 
 <script setup lang="ts">
 import { breakpointsTailwind, useBreakpoints } from '@vueuse/core';
+
 defineOptions({
   name: 'SidebarMobile',
 });

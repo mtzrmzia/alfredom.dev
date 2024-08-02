@@ -29,7 +29,7 @@
             </li>
             <li>
               <NuxtLink
-                to="/"
+                to="/photos"
                 class="text-gray-900 dark:text-white hover:opacity-60 transition-opacity"
               >
                 Photos

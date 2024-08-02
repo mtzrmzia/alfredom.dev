@@ -1,0 +1,25 @@
+<template>
+  <section>
+    <div
+      class="grid gap-3 mx-3 my-3 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 2xl:grid-cols-4"
+    >
+      <NuxtImg
+        v-for="(_, index) in Array(44)"
+        :key="index"
+        :src="`/travel/${index + 1}.jpeg`"
+        format="webp"
+        width="756"
+        height="1008"
+        :placeholder="[756, 1008]"
+        loading="lazy"
+        :alt="`Photo ${index + 1} of 44 by Alfredo Martínez`"
+      />
+    </div>
+  </section>
+</template>
+
+<script setup lang="ts">
+defineOptions({
+  name: 'Photos',
+});
+</script>
