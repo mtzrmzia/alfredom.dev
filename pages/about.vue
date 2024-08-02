@@ -3,6 +3,7 @@
     <AboutMeSection />
     <OnlineSection />
     <WorkSection />
+    <TravellingSection />
   </div>
 </template>
 
