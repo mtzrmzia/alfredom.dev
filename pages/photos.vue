@@ -22,4 +22,10 @@
 defineOptions({
   name: 'Photos',
 });
+
+useSeoMeta({
+  title: 'Photos',
+  ogTitle: 'Alfredo Martínez - Photos',
+  ogUrl: 'https://alfredom.dev/photos',
+});
 </script>

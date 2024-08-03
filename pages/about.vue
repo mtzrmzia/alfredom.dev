@@ -11,4 +11,10 @@
 defineOptions({
   name: 'About',
 });
+
+useSeoMeta({
+  title: 'About me',
+  ogTitle: 'Alfredo Martínez - About me',
+  ogUrl: 'https://alfredom.dev/about',
+});
 </script>

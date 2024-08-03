@@ -52,4 +52,11 @@
 defineOptions({
   name: 'Index',
 });
+
+useSeoMeta({
+  title: 'FrontEnd Engineer',
+  ogTitle: 'Alfredo Martínez - FrontEnd Engineer',
+  ogUrl: 'https://alfredom.dev/',
+  ogSiteName: 'Alfredo Martínez',
+});
 </script>
