@@ -4,7 +4,7 @@
       {{ t('about.online.title') }}
     </h2>
     <ul
-      class="gap-3 grid grid-cols-2 sm:grid-cols-[repeat(4,min-content)] sm:grid-flow-col"
+      class="gap-3 grid grid-cols-2 sm:grid-cols-[repeat(6,min-content)] sm:grid-flow-col"
     >
       <li v-for="item in onlineItems" :key="item.label">
         <UButton
@@ -43,6 +43,14 @@ const onlineItems = [
   {
     label: 'LinkedIn',
     to: 'https://www.linkedin.com/in/mtzrmzia/',
+  },
+  {
+    label: 'CV',
+    to: 'https://cv.alfredom.dev/',
+  },
+  {
+    label: 'Medium',
+    to: 'https://medium.com/@mtzrmzia',
   },
 ];
 </script>
