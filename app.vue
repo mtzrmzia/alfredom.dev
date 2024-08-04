@@ -19,6 +19,22 @@ useHead({
     },
   ],
 });
+
+useSeoMeta({
+  titleTemplate: 'Alfredo Martínez - %s',
+  title: 'FrontEnd Engineer',
+  ogTitle: 'Alfredo Martínez - FrontEnd Engineer',
+  description:
+    "I'm a Software FrontEnd Engineer based in México, that loves to code and build stunning digital products on the web.",
+  lang: 'es-MX',
+  ogDescription:
+    "I'm a Software FrontEnd Engineer based in México, that loves to code and build stunning digital products on the web.",
+  ogType: 'website',
+  ogUrl: 'https://alfredom.dev',
+  ogSiteName: 'Alfredo Martínez',
+  ogImageAlt: 'Alfredo Martínez',
+  ogLocale: 'es_MX',
+});
 </script>
 
 <style>

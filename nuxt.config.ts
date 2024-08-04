@@ -13,35 +13,6 @@ export default defineNuxtConfig({
   ssr: true,
   app: {
     head: {
-      titleTemplate: 'Alfredo Martínez - %s',
-      title: 'FrontEnd Engineer',
-      meta: [
-        {
-          name: 'description',
-          content:
-            "I'm a FrontEnd Engineer based in México, that loves to code and build stunning digital products on the web.",
-        },
-        {
-          name: 'og:description',
-          content:
-            "I'm a FrontEnd Engineer based in México, that loves to code and build stunning digital products on the web.",
-        },
-        {
-          name: 'og:type',
-          content: 'website',
-        },
-        {
-          name: 'og:image:alt',
-          content: 'Alfredo Martínez',
-        },
-        {
-          property: 'og:locale',
-          content: 'es_MX',
-        },
-      ],
-      htmlAttrs: {
-        lang: 'es-MX',
-      },
       bodyAttrs: {
         class: 'antialiased h-full',
       },

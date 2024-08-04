@@ -81,5 +81,9 @@ function isSelected(value: string) {
   return colorMode.preference === value;
 }
 
+useSeoMeta({
+  icon: favicon,
+});
+
 useFavicon(favicon);
 </script>
