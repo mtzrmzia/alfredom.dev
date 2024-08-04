@@ -1,0 +1,78 @@
+{
+  "navigation": {
+    "home": {
+      "labelLink": "Home",
+      "title": "FrontEnd Engineer",
+      "ogTitle": "Alfredo Martínez - FrontEnd Engineer"
+    },
+    "about": {
+      "labelLink": "About",
+      "title": "About me",
+      "ogTitle": "Alfredo Martínez - About me"
+    },
+    "blog": {
+      "labelLink": "Blog",
+      "title": "Blog"
+    },
+    "photos": {
+      "labelLink": "Photos",
+      "title": "Photos",
+      "ogTitle": "Alfredo Martínez - Photos"
+    }
+  },
+  "index": {
+    "greeting": "Hey, I'm Alfredo Martínez",
+    "paragraph1": {
+      "text": "{0} {1} {2} {3}",
+      "based": "I'm a FrontEnd software engineer based in México. I ",
+      "code": "code,",
+      "write": " write",
+      "and": "and create stunning digital products on the web."
+    },
+    "paragraph2": {
+      "text": "Love helping to others developers to become FrontEnd experts. Currently at {0}",
+      "pemex": "Pemex"
+    }
+  },
+  "about": {
+    "main": {
+      "title": "About me",
+      "p1": {
+        "text": "{0} {1}",
+        "hey": "Hey there! 👋🏾.",
+        "been": "I'm Alfredo. I have been coding for 8 years. As a FrontEnd Engineer, I specialize creating stunning digital products using Vue, Nuxt and TailwindCSS ecosystem."
+      },
+      "p2": {
+        "text": "Currently working at {0} {1} {2} {3} {4} {5}",
+        "pemex": "Pemex",
+        "pemexWork": "as a FrontEnd Web Engineer, building a platform for contract management.",
+        "before": "Before that, I worked at",
+        "devSalsa": "Dev Salsa",
+        "building": "building",
+        "joinBrands": "joinbrands, ",
+        "joinBrandsWork": "a content creators platform to make branded UGC."
+      },
+      "p3": "I am passionate about working at the intersection of product, engineering, and developer experience. I get excited by TailwindCSS, Vue, serverless technologies, Open Source, frontend simplicity, and minimalism. I love automating processes, building user-centric products, and enjoying a good cappuccino during a productive workday.",
+      "p4": "I was born and raised in León, Guanajuato, Mexico and come from studying Computer Systems Engineering",
+      "p5": {
+        "text": "Outside of work, I'm obsessed with sports, attending concerts, walking with Puppy and {0}",
+        "travelling": "travelling"
+      }
+    },
+    "online": {
+      "title": "Online"
+    },
+    "work": {
+      "title": "Work"
+    },
+    "travelling": {
+      "title": "Travelling",
+      "p1": "I've been lucky enough to discover many countries around the world.",
+      "p2": "These are the ones that I visited.",
+      "indicators": {
+        "visited": "Visited",
+        "home": "Home"
+      }
+    }
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "navigation": {
+    "home": {
+      "labelLink": "Inicio",
+      "title": "Desarrollador FrontEnd",
+      "ogTitle": "Alfredo Martínez - Desarrollador FrontEnd"
+    },
+    "about": {
+      "labelLink": "Acerca de",
+      "title": "Acerca de mí",
+      "ogTitle": "Alfredo Martínez - Acerca de mí"
+    },
+    "blog": {
+      "labelLink": "Blog",
+      "title": "Blog"
+    },
+    "photos": {
+      "labelLink": "Fotos",
+      "title": "Fotos",
+      "ogTitle": "Alfredo Martínez - Fotos"
+    }
+  },
+  "index": {
+    "greeting": "Hey, soy Alfredo Martínez",
+    "paragraph1": {
+      "text": "{0} {1} {2} {3}",
+      "based": "Soy un desarrollador FrontEnd radicado en México.",
+      "code": "Programo,",
+      "write": " escribo",
+      "and": " y creo experiencias digitales increíbles en la web."
+    },
+    "paragraph2": {
+      "text": "Me encanta ayudar a otros desarrolladores a convertirse en expertos en FrontEnd. Actualmente en {0}",
+      "pemex": "Pemex"
+    }
+  },
+  "about": {
+    "main": {
+      "title": "Acerca de mí",
+      "p1": {
+        "text": "{0} {1}",
+        "hey": "¡Hola! 👋🏾.",
+        "been": "Soy Alfredo. Llevo 8 años programando. Como Ingeniero FrontEnd, me especializo en crear impresionantes productos digitales utilizando el ecosistema de Vue, Nuxt y TailwindCSS."
+      },
+      "p2": {
+        "text": "Actualmente trabajo en {0} {1} {2} {3} {4} {5}",
+        "pemex": "Pemex",
+        "pemexWork": "como Ingeniero Web FrontEnd, construyendo una plataforma para la gestión de contratos.",
+        "before": "Antes de eso, trabajé en",
+        "devSalsa": "Dev Salsa",
+        "building": "desarrollando",
+        "joinBrands": "joinbrands, ",
+        "joinBrandsWork": " una plataforma para creadores de contenido."
+      },
+      "p3": "Me apasiona trabajar en la intersección de producto, ingeniería y experiencia del desarrollador. Me entusiasman TailwindCSS, Vue, tecnologías serverless, Open Source, la simplicidad del frontend y el minimalismo. Me encanta automatizar procesos, construir productos centrados en el usuario y disfrutar de un buen cappuccino durante una jornada de trabajo productiva.",
+      "p4": "Nací y crecí en León, Guanajuato, México y estudié Ingeniería en Sistemas Computacionales.",
+      "p5": {
+        "text": "Fuera del trabajo, me encanta hacer deportes, asistir a conciertos, pasear con Puppy y {0}",
+        "travelling": "viajar"
+      }
+    },
+    "online": {
+      "title": "En línea"
+    },
+    "work": {
+      "title": "Trabajo"
+    },
+    "travelling": {
+      "title": "De viaje",
+      "p1": "He tenido la suerte de descubrir muchos países alrededor del mundo.",
+      "p2": "Estos son los que he visitado.",
+      "indicators": {
+        "visited": "Visitado",
+        "home": "Casa"
+      }
+    }
+  }
+}

@@ -1,6 +1,8 @@
 <template>
   <section>
-    <h2 class="my-6 text-lg font-bold">Work</h2>
+    <h2 class="my-6 text-lg font-bold">
+      {{ t('about.work.title') }}
+    </h2>
     <div
       v-for="item in workItems"
       :key="item.position"
@@ -38,6 +40,8 @@
 defineOptions({
   name: 'WorkSection',
 });
+
+const { t } = useI18n();
 
 const workItems = [
   {

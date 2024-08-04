@@ -19,7 +19,7 @@
           class="text-gray-900 dark:text-white hover:opacity-60 transition-opacity"
           @click.self="closeSidebar"
         >
-          Home
+          {{ t('navigation.home.labelLink') }}
         </NuxtLink>
       </li>
       <li>
@@ -28,7 +28,7 @@
           class="text-gray-900 dark:text-white hover:opacity-60 transition-opacity"
           @click.self="closeSidebar"
         >
-          About
+          {{ t('navigation.about.labelLink') }}
         </NuxtLink>
       </li>
       <li>
@@ -36,7 +36,7 @@
           to="/"
           class="text-gray-900 dark:text-white hover:opacity-60 transition-opacity"
         >
-          Blog
+          {{ t('navigation.blog.labelLink') }}
         </NuxtLink>
       </li>
       <li>
@@ -45,7 +45,7 @@
           class="text-gray-900 dark:text-white hover:opacity-60 transition-opacity"
           @click.self="closeSidebar"
         >
-          Photos
+          {{ t('navigation.photos.labelLink') }}
         </NuxtLink>
       </li>
     </ul>
@@ -59,6 +59,7 @@ defineOptions({
   name: 'SidebarMobile',
 });
 
+const { t } = useI18n();
 const modelValue = defineModel({
   type: Boolean,
   default: true,

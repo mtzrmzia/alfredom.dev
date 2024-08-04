@@ -12,9 +12,11 @@ defineOptions({
   name: 'About',
 });
 
+const { t } = useI18n();
+
 useSeoMeta({
-  title: 'About me',
-  ogTitle: 'Alfredo Martínez - About me',
+  title: () => t('navigation.about.title'),
+  ogTitle: () => t('navigation.about.ogTitle'),
   ogUrl: 'https://alfredom.dev/about',
 });
 </script>

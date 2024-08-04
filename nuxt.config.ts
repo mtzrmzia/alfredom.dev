@@ -20,7 +20,6 @@ export default defineNuxtConfig({
     pageTransition: { name: 'fade', mode: 'out-in' },
     layoutTransition: { name: 'fade', mode: 'out-in' },
   },
-  compatibilityDate: '2024-04-03',
   devtools: { enabled: true },
   components: [
     {
@@ -35,6 +34,8 @@ export default defineNuxtConfig({
     '@nuxt/fonts',
     // https://image.nuxt.com/
     '@nuxt/image',
+    // https://i18n.nuxtjs.org/
+    '@nuxtjs/i18n',
   ],
   colorMode: {
     classSuffix: '',
@@ -59,4 +60,27 @@ export default defineNuxtConfig({
       baseURL: 'https://ik.imagekit.io/alfredom',
     },
   },
+  i18n: {
+    lazy: false,
+    langDir: 'locales',
+    strategy: 'no_prefix',
+    locales: [
+      {
+        code: 'en',
+        iso: 'en-US',
+        name: 'English',
+        file: 'en.json',
+      },
+      {
+        code: 'es',
+        iso: 'es-MX',
+        name: 'Español',
+        file: 'es.json',
+      },
+    ],
+    defaultLocale: 'en',
+    vueI18n: './i18n.config.ts',
+    baseUrl: 'https://alfredom.dev',
+  },
+  compatibilityDate: '2024-04-03',
 });

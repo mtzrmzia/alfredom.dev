@@ -12,6 +12,8 @@
         height="1008"
         :placeholder="[756, 1008]"
         loading="lazy"
+        ismap
+        decoding="auto"
         :alt="`Photo ${index + 1} of 44 by Alfredo Martínez`"
       />
     </div>
@@ -23,9 +25,11 @@ defineOptions({
   name: 'Photos',
 });
 
+const { t } = useI18n();
+
 useSeoMeta({
-  title: 'Photos',
-  ogTitle: 'Alfredo Martínez - Photos',
+  title: () => t('navigation.photos.title'),
+  ogTitle: () => t('navigation.photos.ogTitle'),
   ogUrl: 'https://alfredom.dev/photos',
 });
 </script>

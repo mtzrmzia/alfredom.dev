@@ -1,6 +1,8 @@
 <template>
   <section>
-    <h2 class="my-6 text-lg font-bold">Online</h2>
+    <h2 class="my-6 text-lg font-bold">
+      {{ t('about.online.title') }}
+    </h2>
     <ul
       class="gap-3 grid grid-cols-2 sm:grid-cols-[repeat(4,min-content)] sm:grid-flow-col"
     >
@@ -26,6 +28,8 @@
 defineOptions({
   name: 'OnlineSection',
 });
+
+const { t } = useI18n();
 
 const onlineItems = [
   {

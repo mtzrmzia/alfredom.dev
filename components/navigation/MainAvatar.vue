@@ -4,6 +4,9 @@
     format="webp"
     alt="alfredo-avatar"
     :class="[classes, 'rounded-full']"
+    loading="lazy"
+    ismap
+    decoding="auto"
     placeholder
   />
 </template>

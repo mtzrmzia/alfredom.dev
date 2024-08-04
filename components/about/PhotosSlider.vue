@@ -10,6 +10,8 @@
           height="240"
           format="webp"
           :placeholder="240"
+          ismap
+          decoding="auto"
           alt="Santiago Bernabeu 🇪🇦"
         />
         <div class="absolute inset-0 shadow-[inset_0_0_4px_rgba(0,0,0,.3)]" />
@@ -28,6 +30,8 @@
           height="240"
           format="webp"
           :placeholder="240"
+          ismap
+          decoding="auto"
           alt="Puppy walk 🐶️"
         />
         <div class="absolute inset-0 shadow-[inset_0_0_4px_rgba(0,0,0,.3)]" />
@@ -47,6 +51,8 @@
             height="240"
             format="webp"
             :placeholder="240"
+            ismap
+            decoding="auto"
             alt=" Cartagena 🏖️"
           />
           <div class="absolute inset-0 shadow-[inset_0_0_4px_rgba(0,0,0,.3)]" />

@@ -2,8 +2,8 @@
   <ClientOnly>
     <UDropdown
       :items="items"
-      :popper="{ placement: 'bottom-start' }"
-      :ui="{ width: 'w-auto', padding: 'p-2', rounded: 'rounded-xl' }"
+      :popper="{ placement: 'bottom-start', arrow: true }"
+      :ui="{ width: 'w-auto', padding: 'p-1', rounded: 'rounded-xl' }"
     >
       <UButton
         class="rounded-full"
@@ -42,9 +42,7 @@ defineOptions({
 const colorMode = useColorMode();
 
 const iconMode = computed(() => {
-  return colorMode.value === 'light'
-    ? 'solar:sun-2-bold-duotone'
-    : 'solar:moon-bold-duotone';
+  return colorMode.value === 'light' ? 'hugeicons:sun-03' : 'hugeicons:moon-02';
 });
 
 const favicon = computed((): string =>

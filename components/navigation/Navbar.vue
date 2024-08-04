@@ -8,7 +8,7 @@
           <MainAvatar />
         </NuxtLink>
         <div
-          class="flex flex-row-reverse gap-3 items-center sm:flex-row sm:gap-4 h-[36px]"
+          class="flex flex-row-reverse gap-3 items-center sm:flex-row h-[36px]"
         >
           <ul class="hidden grid-flow-col gap-6 text-sm font-medium sm:grid">
             <li>
@@ -16,7 +16,7 @@
                 to="/about"
                 class="text-gray-900 dark:text-white hover:opacity-60 transition-opacity"
               >
-                About
+                {{ t('navigation.about.labelLink') }}
               </NuxtLink>
             </li>
             <li>
@@ -24,7 +24,7 @@
                 to="/"
                 class="text-gray-900 dark:text-white hover:opacity-60 transition-opacity"
               >
-                Blog
+                {{ t('navigation.blog.labelLink') }}
               </NuxtLink>
             </li>
             <li>
@@ -32,7 +32,7 @@
                 to="/photos"
                 class="text-gray-900 dark:text-white hover:opacity-60 transition-opacity"
               >
-                Photos
+                {{ t('navigation.photos.labelLink') }}
               </NuxtLink>
             </li>
           </ul>
@@ -41,10 +41,11 @@
             variant="ghost"
             color="gray"
             size="md"
-            trailing-icon="solar:hamburger-menu-line-duotone"
+            trailing-icon="hugeicons:menu-03"
             @click="sidebarIsOpen = true"
           />
           <ColorModeSelect />
+          <LanguageSelect />
         </div>
       </nav>
     </div>
@@ -57,5 +58,6 @@ defineOptions({
   name: 'Navbar',
 });
 
+const { t } = useI18n();
 const sidebarIsOpen = ref(false);
 </script>
