@@ -1,5 +1,5 @@
 <template>
-  <div class="flex text-sm lowercase opacity-60">
+  <div class="flex text-sm lowercase opacity-70 dark:opacity-60">
     <span class="block w-[62px] whitespace-nowrap">{{ date }}</span>
     <div class="flex gap-1.5">
       <span>·</span>

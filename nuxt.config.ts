@@ -50,6 +50,7 @@ export default defineNuxtConfig({
       },
       {
         name: 'Gloria Hallelujah',
+        styles: ['normal'],
       },
     ],
     provider: 'google',
