@@ -7,6 +7,8 @@
         color="gray"
         size="xl"
         trailing-icon="heroicons:x-mark-16-solid"
+        aria-label="toggle sidebar"
+        role="button"
         @click="modelValue = false"
       />
     </div>

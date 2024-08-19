@@ -1,5 +1,10 @@
 <template>
-  <CustomDropdown :icon="iconMode" :items="items" :key-label="keyLabel" />
+  <CustomDropdown
+    :icon="iconMode"
+    :items="items"
+    :key-label="keyLabel"
+    aria-label="select color mode"
+  />
 </template>
 
 <script setup lang="ts">

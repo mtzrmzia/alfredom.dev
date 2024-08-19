@@ -3,6 +3,7 @@
     icon="hugeicons:language-skill"
     :items="items"
     :key-label="keyLabel"
+    aria-label="select language"
   />
 </template>
 

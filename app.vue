@@ -1,12 +1,14 @@
 <template>
-  <div
-    class="min-h-screen dark:bg-[rgb(5,5,5)] dark:text-gray-200 text-gray-800"
-  >
-    <NuxtLayout>
-      <NuxtPage />
-    </NuxtLayout>
-    <UNotifications />
-  </div>
+  <Html :lang="head.htmlAttrs.lang" :dir="head.htmlAttrs.dir">
+    <div
+      class="min-h-screen dark:bg-[rgb(5,5,5)] dark:text-gray-200 text-gray-800"
+    >
+      <NuxtLayout>
+        <NuxtPage />
+      </NuxtLayout>
+      <UNotifications />
+    </div>
+  </Html>
 </template>
 
 <script setup lang="ts">
@@ -20,13 +22,18 @@ useHead({
   ],
 });
 
+const head = useLocaleHead({
+  addDirAttribute: true,
+  identifierAttribute: 'id',
+  addSeoAttributes: true,
+});
+
 useSeoMeta({
   titleTemplate: 'Alfredo Martínez - %s',
   title: 'FrontEnd Engineer',
   ogTitle: 'Alfredo Martínez - FrontEnd Engineer',
   description:
     "I'm a Software FrontEnd Engineer based in México, that loves to code and build stunning digital products on the web.",
-  lang: 'es-MX',
   ogDescription:
     "I'm a Software FrontEnd Engineer based in México, that loves to code and build stunning digital products on the web.",
   ogType: 'website',

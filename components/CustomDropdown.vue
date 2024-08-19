@@ -2,10 +2,12 @@
   <ClientOnly>
     <UPopover v-model:open="open" :ui="configUI" :popper="{ arrow: true }">
       <UButton
+        v-bind="$attrs"
         class="rounded-full"
         variant="ghost"
         color="gray"
         size="md"
+        role="button"
         :trailing-icon="icon"
         :ui="buttonUI"
       />
@@ -14,7 +16,7 @@
           v-for="(item, index) in items"
           :key="index"
           :class="[
-            'relative select-none rounded-md py-2.5 px-5 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-900',
+            'relative select-none rounded-md py-2 px-5 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-900',
             {
               'bg-gray-100 dark:bg-gray-900':
                 isSelected(item.labelClass) && hoveredLabel === keyLabel,
