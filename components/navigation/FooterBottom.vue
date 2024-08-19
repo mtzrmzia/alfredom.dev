@@ -13,6 +13,7 @@
             :key="item.name"
             :to="item.to"
             :target="item.target"
+            :aria-label="item.ariaLabel"
             class="px-3 text-gray-500 transition-colors hover:text-gray-800 dark:hover:text-gray-300"
           >
             <UIcon :name="item.icon" class="w-5 h-5" />
@@ -34,18 +35,21 @@ const navigationSocial = [
     to: 'https://x.com/mtzrmz_ia',
     target: '_blank',
     icon: 'ri:twitter-x-fill',
+    ariaLabel: 'Twitter',
   },
   {
     name: 'LinkedIn',
     to: 'https://www.linkedin.com/in/mtzrmzia/',
     target: '_blank',
     icon: 'ri:linkedin-box-fill',
+    ariaLabel: 'LinkedIn',
   },
   {
     name: 'Github',
     to: 'https://github.com/mtzrmzia',
     target: '_blank',
     icon: 'ri:github-fill',
+    ariaLabel: 'Github',
   },
 ];
 </script>

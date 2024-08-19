@@ -40,7 +40,6 @@ useSeoMeta({
   ogUrl: 'https://alfredom.dev',
   ogSiteName: 'Alfredo Martínez',
   ogImageAlt: 'Alfredo Martínez',
-  ogLocale: 'es_MX',
 });
 </script>
 

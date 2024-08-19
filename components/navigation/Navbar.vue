@@ -42,6 +42,7 @@
             color="gray"
             size="md"
             trailing-icon="hugeicons:menu-03"
+            aria-label="open sidebar"
             @click="sidebarIsOpen = true"
           />
           <ColorModeSelect />
