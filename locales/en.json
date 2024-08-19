@@ -1,5 +1,10 @@
 {
   "navigation": {
+    "colorMode": {
+      "light": "Light",
+      "dark": "Dark",
+      "system": "System"
+    },
     "home": {
       "labelLink": "Home",
       "title": "FrontEnd Engineer",

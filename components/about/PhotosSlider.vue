@@ -32,12 +32,12 @@
           :placeholder="240"
           ismap
           decoding="auto"
-          alt="Puppy walk 🐶️"
+          alt="Puppy 🐶️"
         />
         <div class="absolute inset-0 shadow-[inset_0_0_4px_rgba(0,0,0,.3)]" />
       </div>
       <p class="mt-3 text-center text-gray-600 dark:text-gray-800 text-md">
-        Puppy walk 🐶
+        Puppy 🐶
       </p>
     </div>
     <div class="hidden sm:block">

@@ -1,36 +1,5 @@
 <template>
-  <ClientOnly>
-    <UDropdown
-      :items="items"
-      :popper="{ placement: 'bottom-start', arrow: true }"
-      :ui="{ width: 'w-auto', padding: 'p-1', rounded: 'rounded-xl' }"
-    >
-      <UButton
-        class="rounded-full"
-        variant="ghost"
-        color="gray"
-        size="md"
-        :trailing-icon="iconMode"
-      />
-      <template #item="{ item }">
-        <div class="py-0.5 pl-10 relative pr-2">
-          <div class="absolute flex inset-y-0 items-center left-0 pl-2">
-            <UIcon
-              v-if="isSelected(item.class)"
-              name="heroicons:check-16-solid"
-              class="w-5 h-5"
-            />
-          </div>
-          <span
-            :class="[isSelected(item.class) ? 'font-semibold' : 'font-normal']"
-            class="truncate"
-          >
-            {{ item.label }}
-          </span>
-        </div>
-      </template>
-    </UDropdown>
-  </ClientOnly>
+  <CustomDropdown :icon="iconMode" :items="items" :key-label="keyLabel" />
 </template>
 
 <script setup lang="ts">
@@ -40,8 +9,9 @@ defineOptions({
   name: 'ColorModeSelect',
 });
 const colorMode = useColorMode();
+const { t } = useI18n();
 
-const iconMode = computed(() => {
+const iconMode = computed((): string => {
   return colorMode.value === 'light' ? 'hugeicons:sun-03' : 'hugeicons:moon-02';
 });
 
@@ -49,35 +19,34 @@ const favicon = computed((): string =>
   colorMode.value === 'dark' ? '/favicon-dark.png' : '/favicon-light.png',
 );
 
-const items = [
-  [
+const keyLabel = computed((): string => {
+  return colorMode.preference;
+});
+const items = computed(() => {
+  return [
     {
-      label: 'Sistema',
-      class: 'system',
+      label: t('navigation.colorMode.system'),
+      labelClass: 'system',
       click: () => {
         colorMode.preference = 'system';
       },
     },
     {
-      label: 'Claro',
-      class: 'light',
+      label: t('navigation.colorMode.light'),
+      labelClass: 'light',
       click: () => {
         colorMode.preference = 'light';
       },
     },
     {
-      label: 'Oscuro',
-      class: 'dark',
+      label: t('navigation.colorMode.dark'),
+      labelClass: 'dark',
       click: () => {
         colorMode.preference = 'dark';
       },
     },
-  ],
-];
-
-function isSelected(value: string) {
-  return colorMode.preference === value;
-}
+  ];
+});
 
 useSeoMeta({
   icon: favicon,

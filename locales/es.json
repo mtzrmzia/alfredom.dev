@@ -1,5 +1,10 @@
 {
   "navigation": {
+    "colorMode": {
+      "light": "Claro",
+      "dark": "Oscuro",
+      "system": "Sistema"
+    },
     "home": {
       "labelLink": "Inicio",
       "title": "Desarrollador FrontEnd",
