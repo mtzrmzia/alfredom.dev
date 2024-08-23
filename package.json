@@ -14,6 +14,9 @@
     "lintfix": "prettier --write --list-different . && yarn lint:js --fix"
   },
   "dependencies": {
+    "@iconify-json/hugeicons": "^1.1.1",
+    "@iconify-json/ri": "^1.1.22",
+    "@iconify-json/solar": "^1.1.10",
     "@nuxt/fonts": "^0.7.2",
     "@nuxt/image": "^1.7.0",
     "@nuxt/ui": "^2.18.4",
@@ -23,9 +26,6 @@
     "vue": "latest"
   },
   "devDependencies": {
-    "@iconify-json/hugeicons": "^1.1.1",
-    "@iconify-json/ri": "^1.1.22",
-    "@iconify-json/solar": "^1.1.10",
     "@nuxtjs/eslint-config-typescript": "^12.1.0",
     "@typescript-eslint/parser": "^7.18.0",
     "@vueuse/core": "^11.0.1",
