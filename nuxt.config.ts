@@ -36,6 +36,8 @@ export default defineNuxtConfig({
     '@nuxt/image',
     // https://i18n.nuxtjs.org/
     '@nuxtjs/i18n',
+    // https://hub.nuxt.com/
+    '@nuxthub/core',
   ],
   colorMode: {
     classSuffix: '',
