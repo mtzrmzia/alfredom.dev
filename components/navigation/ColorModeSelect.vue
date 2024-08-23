@@ -53,9 +53,5 @@ const items = computed(() => {
   ];
 });
 
-useSeoMeta({
-  icon: favicon,
-});
-
 useFavicon(favicon);
 </script>

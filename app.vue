@@ -20,6 +20,14 @@ useHead({
         'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no',
     },
   ],
+  link: [
+    {
+      rel: 'icon',
+      type: 'image/png',
+      sizes: '32x32',
+      href: '/favicon-light.png',
+    },
+  ],
 });
 
 const head = useLocaleHead({
