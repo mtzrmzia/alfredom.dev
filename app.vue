@@ -52,13 +52,18 @@ useSeoMeta({
 </script>
 
 <style>
-.fade-enter-from,
-.fade-leave-to {
-  opacity: 0;
+.page-enter-active,
+.page-leave-active {
+  transition: all 0.2s;
 }
 
-.fade-enter-active,
-.fade-leave-active {
-  transition: opacity 150ms ease-out;
+.page-leave-to {
+  opacity: 0;
+  transform: translateY(-5px);
+}
+
+.page-enter-from {
+  opacity: 0;
+  transform: translateY(5px);
 }
 </style>

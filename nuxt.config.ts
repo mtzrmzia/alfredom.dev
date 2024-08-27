@@ -17,8 +17,8 @@ export default defineNuxtConfig({
         class: 'antialiased h-full',
       },
     },
-    pageTransition: { name: 'fade', mode: 'out-in' },
-    layoutTransition: { name: 'fade', mode: 'out-in' },
+    pageTransition: { name: 'page', mode: 'out-in' },
+    layoutTransition: { name: 'page', mode: 'out-in' },
   },
   devtools: { enabled: true },
   components: [
@@ -36,8 +36,6 @@ export default defineNuxtConfig({
     '@nuxt/image',
     // https://i18n.nuxtjs.org/
     '@nuxtjs/i18n',
-    // https://hub.nuxt.com/
-    '@nuxthub/core',
   ],
   colorMode: {
     classSuffix: '',

@@ -100,8 +100,8 @@ watch(
 );
 
 function closeSidebar() {
-  setTimeout(() => {
-    modelValue.value = false;
-  }, 160);
+  modelValue.value = false;
+  // setTimeout(() => {
+  // }, 160);
 }
 </script>
