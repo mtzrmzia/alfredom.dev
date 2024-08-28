@@ -17,7 +17,7 @@ defineOptions({
 });
 
 const toast = useToast();
-const source = ref('hi@alfredom.dev');
+const source = ref('hello@alfredom.dev');
 
 const { copy, copied } = useClipboard({
   source,
