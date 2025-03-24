@@ -1,5 +1,5 @@
 <template>
-  <Html :lang="head.htmlAttrs.lang" :dir="head.htmlAttrs.dir">
+  <Html :lang="head.htmlAttrs?.lang" :dir="head.htmlAttrs?.dir">
     <div
       class="min-h-screen dark:bg-[rgb(5,5,5)] dark:text-gray-200 text-gray-800"
     >
@@ -31,9 +31,7 @@ useHead({
 });
 
 const head = useLocaleHead({
-  addDirAttribute: true,
-  identifierAttribute: 'id',
-  addSeoAttributes: true,
+  key: 'id',
 });
 
 useSeoMeta({

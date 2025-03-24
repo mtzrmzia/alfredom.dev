@@ -68,13 +68,13 @@ export default defineNuxtConfig({
     locales: [
       {
         code: 'en',
-        iso: 'en-US',
+        language: 'en-US',
         name: 'English',
         file: 'en.json',
       },
       {
         code: 'es',
-        iso: 'es-MX',
+        language: 'es-MX',
         name: 'Español',
         file: 'es.json',
       },
@@ -82,6 +82,9 @@ export default defineNuxtConfig({
     defaultLocale: 'en',
     vueI18n: './i18n.config.ts',
     baseUrl: 'https://alfredom.dev',
+    bundle: {
+      optimizeTranslationDirective: false,
+    },
   },
   compatibilityDate: '2024-04-03',
 });
