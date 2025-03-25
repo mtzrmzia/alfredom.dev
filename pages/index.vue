@@ -17,36 +17,38 @@
               tag="p"
               scope="global"
             >
-              {{ t('home.paragraph1.based') }}
-              <NuxtLink
-                to="https://github.com/mtzrmzia"
-                target="_blank"
-                class="underline underline-offset-2"
-              >
-                {{ t('home.paragraph1.code') }}
-              </NuxtLink>
-              <NuxtLink
-                to="https://github.com/mtzrmzia"
-                target="_blank"
-                class="underline underline-offset-2"
-              >
-                {{ t('home.paragraph1.write') }}
-              </NuxtLink>
-              {{ t('home.paragraph1.and') }}
+              <template #based>
+                {{ t('home.paragraph1.based') }}
+              </template>
+              <template #code>
+                <NuxtLink
+                  to="https://github.com/mtzrmzia"
+                  target="_blank"
+                  class="underline underline-offset-2"
+                >
+                  {{ t('home.paragraph1.code') }}
+                </NuxtLink>
+              </template>
+              <template #and>
+                {{ t('home.paragraph1.and') }}
+              </template>
             </i18n-t>
+
             <i18n-t
               keypath="home.paragraph2.text"
               class="sm:max-w-md"
               tag="p"
               scope="global"
             >
-              <NuxtLink
-                to="https://github.com/mtzrmzia"
-                target="_blank"
-                class="underline underline-offset-2"
-              >
-                {{ t('home.paragraph2.pemex') }}
-              </NuxtLink>
+              <template #company>
+                <NuxtLink
+                  to="https://github.com/mtzrmzia"
+                  target="_blank"
+                  class="underline underline-offset-2"
+                >
+                  {{ t('home.paragraph2.company') }}
+                </NuxtLink>
+              </template>
             </i18n-t>
           </div>
         </div>

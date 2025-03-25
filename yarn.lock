@@ -1127,9 +1127,9 @@
     local-pkg "^0.4.2"
 
 "@nuxtjs/i18n@^9.3.4":
-  version "9.3.4"
-  resolved "https://registry.yarnpkg.com/@nuxtjs/i18n/-/i18n-9.3.4.tgz#4407d61d1c77964d1603931db72bcd1d8b40f414"
-  integrity sha512-vdCKRWXdzUR4gHAbX2ymvlw49gTb6pQm1BHUT7bNFVPBSMnGjDNXXNikoP0aBKRggD8REB2CnoEu4DzZVjaS+g==
+  version "9.4.0"
+  resolved "https://registry.yarnpkg.com/@nuxtjs/i18n/-/i18n-9.4.0.tgz#25691885581dc0b13e890866df48de3ee4f2a3aa"
+  integrity sha512-WREUig3PIdlcd3WbfRtmPx9HoLTUB7vUnbUvPS48O/qebntvAtlJKWjxaaBKpFof1RfbGmvPwtmEt+sYdJ6N3w==
   dependencies:
     "@intlify/h3" "^0.6.1"
     "@intlify/shared" "^10.0.6"
@@ -1137,10 +1137,10 @@
     "@intlify/utils" "^0.13.0"
     "@miyaneee/rollup-plugin-json5" "^1.2.0"
     "@nuxt/kit" "^3.16.1"
-    "@oxc-parser/wasm" "^0.53.0"
+    "@oxc-parser/wasm" "^0.60.0"
     "@rollup/plugin-yaml" "^4.1.2"
     "@vue/compiler-sfc" "^3.5.13"
-    debug "^4.3.5"
+    debug "^4.4.0"
     defu "^6.1.4"
     esbuild "^0.25.1"
     estree-walker "^3.0.3"
@@ -1148,10 +1148,11 @@
     knitwork "^1.2.0"
     magic-string "^0.30.17"
     mlly "^1.7.4"
-    oxc-parser "^0.61.0"
+    oxc-parser "^0.61.2"
     pathe "^2.0.3"
+    typescript "^5.6.2"
     ufo "^1.5.4"
-    unplugin "^2.2.1"
+    unplugin "^2.2.2"
     unplugin-vue-router "^0.12.0"
     vue-i18n "^10.0.6"
     vue-router "^4.5.0"
@@ -1279,24 +1280,12 @@
   resolved "https://registry.yarnpkg.com/@oxc-parser/binding-win32-x64-msvc/-/binding-win32-x64-msvc-0.61.2.tgz#939dd3175641c591da10e40637fa5506d20dbbce"
   integrity sha512-GtRVVz4DGF94MzlJ7xCIpITu6WKYdTqWc2cqMaJEzYDC8EsHjNkfbGhmawhyodFFuTfWqPAjJecIvvAnfMLpxw==
 
-"@oxc-parser/wasm@^0.53.0":
-  version "0.53.0"
-  resolved "https://registry.yarnpkg.com/@oxc-parser/wasm/-/wasm-0.53.0.tgz#5172ca987e50485ae115bb3cea9b99fde56a3a08"
-  integrity sha512-RqWt/Z8SH9RkE5PBTCre/GczXpM/D8pajshzMiHqTVKyrBtUd7ulL2idYBrceBsK+FQT2XdRTx4cUs7TCRfEGw==
-  dependencies:
-    "@oxc-project/types" "^0.53.0"
-
 "@oxc-parser/wasm@^0.60.0":
   version "0.60.0"
   resolved "https://registry.yarnpkg.com/@oxc-parser/wasm/-/wasm-0.60.0.tgz#2207011786361be4c4909e05ac993746cb926555"
   integrity sha512-Dkf9/D87WGBCW3L0+1DtpAfL4SrNsgeRvxwjpKCtbH7Kf6K+pxrT0IridaJfmWKu1Ml+fDvj+7HEyBcfUC/TXQ==
   dependencies:
     "@oxc-project/types" "^0.60.0"
-
-"@oxc-project/types@^0.53.0":
-  version "0.53.0"
-  resolved "https://registry.yarnpkg.com/@oxc-project/types/-/types-0.53.0.tgz#26ae8fe48e029cd5a94c92d289e3917e088eb0cd"
-  integrity sha512-8JXXVoHnRLcl6kDBboSfAmAkKeb6PSvSc5qSJxiOFzFx0ZCLAbUDmuwR2hkBnY7kQS3LmNXaONq1BFAmwTyeZw==
 
 "@oxc-project/types@^0.56.5":
   version "0.56.5"
@@ -2605,9 +2594,9 @@ birpc@^0.2.19:
   integrity sha512-5WeXXAvTmitV1RqJFppT5QtUiz2p1mRSYU000Jkft5ZUCLJIk4uQriYNO50HknxKwM6jd8utNc66K1qGIwwWBQ==
 
 birpc@^2.0.19, birpc@^2.2.0:
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/birpc/-/birpc-2.2.0.tgz#91670e498ee3ff5739072ecabb5e17b6e564c01a"
-  integrity sha512-1/22obknhoj56PcE+pZPp6AbWDdY55M81/ofpPW3Ltlp9Eh4zoFFLswvZmNpRTb790CY5tsNfgbYeNOqIARJfQ==
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/birpc/-/birpc-2.3.0.tgz#e5a402dc785ef952a2383ef3cfc075e0842f3e8c"
+  integrity sha512-ijbtkn/F3Pvzb6jHypHRyve2QApOCZDR25D/VnkY2G/lBNcXCTsnsCxgY4k4PkVB7zfwzYbY3O9Lcqe3xufS5g==
 
 bl@^4.0.3:
   version "4.1.0"
@@ -3818,9 +3807,9 @@ eslint-plugin-node@^11.1.0:
     semver "^6.1.0"
 
 eslint-plugin-prettier@^5.2.1:
-  version "5.2.4"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-prettier/-/eslint-plugin-prettier-5.2.4.tgz#6daa54a11da8c48971475d7c0e239d0b6c6dbc60"
-  integrity sha512-SFtuYmnhwYCtuCDTKPoK+CEzCnEgKTU2qTLwoCxvrC0MFBTIXo1i6hDYOI4cwHaE5GZtlWmTN3YfucYi7KJwPw==
+  version "5.2.5"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-prettier/-/eslint-plugin-prettier-5.2.5.tgz#0ff00b16f4c80ccdafd6a24a263effba1700087e"
+  integrity sha512-IKKP8R87pJyMl7WWamLgPkloB16dagPIdd2FjBDbyRYPKo93wS/NbCOPh6gH+ieNLC+XZrhJt/kWj0PS/DFdmg==
   dependencies:
     prettier-linter-helpers "^1.0.0"
     synckit "^0.10.2"
@@ -6105,7 +6094,7 @@ oxc-parser@^0.56.3:
     "@oxc-parser/binding-win32-arm64-msvc" "0.56.5"
     "@oxc-parser/binding-win32-x64-msvc" "0.56.5"
 
-oxc-parser@^0.61.0:
+oxc-parser@^0.61.2:
   version "0.61.2"
   resolved "https://registry.yarnpkg.com/oxc-parser/-/oxc-parser-0.61.2.tgz#c501614970a8de02c24caa301957cb2e0685c7c1"
   integrity sha512-ZJnAP7VLQhqqnfku7+gssTwmbQyfbZ552Vly4O2BMHkvDwfwLlPtAIYjMq57Lcj5HLmopI0oZlk7xTSML/YsZA==
@@ -7920,7 +7909,7 @@ typed-array-length@^1.0.7:
     possible-typed-array-names "^1.0.0"
     reflect.getprototypeof "^1.0.6"
 
-typescript@^5.8.2:
+typescript@^5.6.2, typescript@^5.8.2:
   version "5.8.2"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.8.2.tgz#8170b3702f74b79db2e5a96207c15e65807999e4"
   integrity sha512-aJn6wq13/afZp/jT9QZmwEjDqqvSGp1VT5GVg+f/t6/oVyrgXM6BY1h9BRh/O5p3PlUPAe+WuiEZOmb/49RqoQ==
@@ -8069,7 +8058,7 @@ unplugin@^1.1.0, unplugin@^1.10.0, unplugin@^1.8.3:
     acorn "^8.14.0"
     webpack-virtual-modules "^0.6.2"
 
-unplugin@^2.1.0, unplugin@^2.2.0, unplugin@^2.2.1:
+unplugin@^2.1.0, unplugin@^2.2.0, unplugin@^2.2.1, unplugin@^2.2.2:
   version "2.2.2"
   resolved "https://registry.yarnpkg.com/unplugin/-/unplugin-2.2.2.tgz#82f8c638ba944f6135e99ae5a8dc9eba9601b4a8"
   integrity sha512-Qp+iiD+qCRnUek+nDoYvtWX7tfnYyXsrOnJ452FRTgOyKmTM7TUJ3l+PLPJOOWPTUyKISKp4isC5JJPSXUjGgw==
@@ -8226,11 +8215,12 @@ vite-plugin-inspect@^11.0.0:
     vite-dev-rpc "^1.0.7"
 
 vite-plugin-vue-tracer@^0.1.1:
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/vite-plugin-vue-tracer/-/vite-plugin-vue-tracer-0.1.1.tgz#cf1195f82320a52ca7bc90f7f0ff9c85d01a0f11"
-  integrity sha512-8BuReHmbSPd6iRQDQhlyK5+DexY1Hmb4K0GUVo9Te1Yaz8gyOZspBm9qdG1SvebdSIKw3WNlzpdstJ47TJ4bOw==
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/vite-plugin-vue-tracer/-/vite-plugin-vue-tracer-0.1.2.tgz#27366dd20fc59771d7afb358ccdbeeec83324502"
+  integrity sha512-pH8BaBQfC9K9A2/ENsdOSfyba76BZGDsmzi7LvgDqNMcPekznIHRdPFjPMVWetYz7fQGPHqvuSQjUrdTyYLmnQ==
   dependencies:
     estree-walker "^3.0.3"
+    exsolve "^1.0.4"
     magic-string "^0.30.17"
     pathe "^2.0.3"
     source-map-js "^1.2.1"
