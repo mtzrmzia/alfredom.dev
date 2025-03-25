@@ -1,4 +1,24 @@
 {
+  "meta": {
+    "home": {
+      "title": "FrontEnd Engineer",
+      "ogTitle": "Crafting stunning web experiences from México 🌎",
+      "description": "I build fast, user-focused digital products with clean design and solid performance.",
+      "ogDescription": "I turn ideas into sleek, scalable web experiences that truly connect."
+    },
+    "about": {
+      "title": "About Me",
+      "description": "Learn more about my background, skills, and what drives me as a developer.",
+      "ogTitle": "Who is Alfredo Martínez?",
+      "ogDescription": "A closer look at the developer behind the pixels."
+    },
+    "photos": {
+      "title": "Photography",
+      "description": "A visual diary of the places, people, and moments that inspire me.",
+      "ogTitle": "Through My Lens",
+      "ogDescription": "Explore the world as I see it — one photo at a time."
+    }
+  },
   "navigation": {
     "colorMode": {
       "light": "Light",
@@ -6,29 +26,19 @@
       "system": "System"
     },
     "home": {
-      "labelLink": "Home",
-      "title": "FrontEnd Engineer",
-      "ogTitle": "Alfredo Martínez - FrontEnd Engineer"
+      "labelLink": "Home"
     },
     "about": {
-      "labelLink": "About",
-      "title": "About me",
-      "ogTitle": "Alfredo Martínez - About me"
-    },
-    "blog": {
-      "labelLink": "Blog",
-      "title": "Blog"
+      "labelLink": "About"
     },
     "photos": {
-      "labelLink": "Photos",
-      "title": "Photos",
-      "ogTitle": "Alfredo Martínez - Photos"
+      "labelLink": "Photos"
     },
     "footer": {
       "disclaimer": "This site is unfinished. Just like my to-do list."
     }
   },
-  "index": {
+  "home": {
     "greeting": "Hey, I'm Alfredo Martínez",
     "paragraph1": {
       "text": "{0} {1} {2} {3}",

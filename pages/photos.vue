@@ -25,11 +25,5 @@ defineOptions({
   name: 'Photos',
 });
 
-const { t } = useI18n();
-
-useSeoMeta({
-  title: () => t('navigation.photos.title'),
-  ogTitle: () => t('navigation.photos.ogTitle'),
-  ogUrl: 'https://alfredom.dev/photos',
-});
+usePageSeoTranslation('photos');
 </script>

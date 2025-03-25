@@ -21,14 +21,6 @@
             </li>
             <li>
               <NuxtLink
-                to="/"
-                class="text-gray-900 dark:text-white hover:opacity-60 transition-opacity"
-              >
-                {{ t('navigation.blog.labelLink') }}
-              </NuxtLink>
-            </li>
-            <li>
-              <NuxtLink
                 to="/photos"
                 class="text-gray-900 dark:text-white hover:opacity-60 transition-opacity"
               >

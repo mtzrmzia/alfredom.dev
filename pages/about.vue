@@ -12,11 +12,5 @@ defineOptions({
   name: 'About',
 });
 
-const { t } = useI18n();
-
-useSeoMeta({
-  title: () => t('navigation.about.title'),
-  ogTitle: () => t('navigation.about.ogTitle'),
-  ogUrl: 'https://alfredom.dev/about',
-});
+usePageSeoTranslation('about');
 </script>

@@ -4,12 +4,12 @@
       {{ t('about.main.title') }}
     </h1>
     <div class="flex flex-col space-y-5">
-      <Translation keypath="about.main.p1.text" tag="p">
+      <i18n-t keypath="about.main.p1.text" tag="p" scope="global">
         <em> {{ t('about.main.p1.hey') }}</em>
         {{ t('about.main.p1.been') }}
-      </Translation>
+      </i18n-t>
 
-      <Translation keypath="about.main.p2.text" tag="p">
+      <i18n-t keypath="about.main.p2.text" tag="p" scope="global">
         <NuxtLink
           to="https://www.pemex.com/Paginas/default.aspx"
           target="_blank"
@@ -38,26 +38,24 @@
           {{ t('about.main.p2.joinBrands') }}
         </NuxtLink>
         {{ t('about.main.p2.joinBrandsWork') }}
-      </Translation>
+      </i18n-t>
       <p>
         {{ t('about.main.p3') }}
       </p>
       <p>
         {{ t('about.main.p4') }}
       </p>
-      <Translation keypath="about.main.p5.text" tag="p">
+      <i18n-t keypath="about.main.p5.text" tag="p" scope="global">
         <NuxtLink class="underline underline-offset-2" to="/photos">
           {{ t('about.main.p5.travelling') }}
         </NuxtLink>
-      </Translation>
+      </i18n-t>
       <PhotosSlider />
     </div>
   </section>
 </template>
 
 <script setup lang="ts">
-import { Translation } from 'vue-i18n';
-
 defineOptions({
   name: 'AboutMeSection',
 });

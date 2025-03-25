@@ -1,4 +1,24 @@
 {
+  "meta": {
+    "home": {
+      "title": "Ingeniero FrontEnd",
+      "ogTitle": "Diseño experiencias web increíbles desde México 🇲🇽",
+      "description": "Construyo productos digitales veloces, centrados en el usuario y con diseño moderno.",
+      "ogDescription": "Transformo ideas en experiencias web escalables que realmente conectan."
+    },
+    "about": {
+      "title": "Sobre mí",
+      "description": "Conoce más sobre mi trayectoria, habilidades y lo que me motiva como desarrollador.",
+      "ogTitle": "¿Quién es Alfredo Martínez?",
+      "ogDescription": "Un vistazo más cercano al desarrollador detrás del código."
+    },
+    "photos": {
+      "title": "Fotografía",
+      "description": "Un diario visual de los lugares, personas y momentos que me inspiran.",
+      "ogTitle": "A través de mi lente",
+      "ogDescription": "Explora el mundo como lo veo yo — una foto a la vez."
+    }
+  },
   "navigation": {
     "colorMode": {
       "light": "Claro",
@@ -6,29 +26,19 @@
       "system": "Sistema"
     },
     "home": {
-      "labelLink": "Inicio",
-      "title": "Desarrollador FrontEnd",
-      "ogTitle": "Alfredo Martínez - Desarrollador FrontEnd"
+      "labelLink": "Inicio"
     },
     "about": {
-      "labelLink": "Acerca de",
-      "title": "Acerca de mí",
-      "ogTitle": "Alfredo Martínez - Acerca de mí"
-    },
-    "blog": {
-      "labelLink": "Blog",
-      "title": "Blog"
+      "labelLink": "Acerca"
     },
     "photos": {
-      "labelLink": "Fotos",
-      "title": "Fotos",
-      "ogTitle": "Alfredo Martínez - Fotos"
+      "labelLink": "Fotos"
     },
     "footer": {
       "disclaimer": "Este sitio está sin terminar. Igual que mi lista de tareas."
     }
   },
-  "index": {
+  "home": {
     "greeting": "Hey, soy Alfredo Martínez",
     "paragraph1": {
       "text": "{0} {1} {2} {3}",
