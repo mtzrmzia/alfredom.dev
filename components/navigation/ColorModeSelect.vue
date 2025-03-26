@@ -1,14 +1,6 @@
-<template>
-  <CustomDropdown
-    :icon="iconMode"
-    :items="items"
-    :key-label="keyLabel"
-    aria-label="select color mode"
-  />
-</template>
-
 <script setup lang="ts">
 import { useFavicon } from '@vueuse/core';
+import type { DropdownMenuItem } from '#ui/types';
 
 defineOptions({
   name: 'ColorModeSelect',
@@ -27,31 +19,40 @@ const favicon = computed((): string =>
 const keyLabel = computed((): string => {
   return colorMode.preference;
 });
-const items = computed(() => {
+
+const items = computed<DropdownMenuItem[]>(() => {
   return [
     {
       label: t('navigation.colorMode.system'),
-      labelClass: 'system',
-      click: () => {
+      class: 'system',
+      onSelect: () => {
         colorMode.preference = 'system';
       },
     },
     {
       label: t('navigation.colorMode.light'),
-      labelClass: 'light',
-      click: () => {
+      class: 'light',
+      onSelect: () => {
         colorMode.preference = 'light';
       },
     },
     {
       label: t('navigation.colorMode.dark'),
-      labelClass: 'dark',
-      click: () => {
+      class: 'dark',
+      onSelect: () => {
         colorMode.preference = 'dark';
       },
     },
   ];
 });
-
 useFavicon(favicon);
 </script>
+
+<template>
+  <CustomDropdown
+    :icon="iconMode"
+    :items="items"
+    :key-label="keyLabel"
+    aria-label="select color mode"
+  />
+</template>

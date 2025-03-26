@@ -1,3 +1,11 @@
+<script setup lang="ts">
+defineOptions({
+  name: 'TravellingSection',
+});
+
+const { t } = useI18n();
+</script>
+
 <template>
   <section>
     <h1 class="my-6 text-xl font-bold">
@@ -45,11 +53,3 @@
     <WorldMap />
   </section>
 </template>
-
-<script setup lang="ts">
-defineOptions({
-  name: 'TravellingSection',
-});
-
-const { t } = useI18n();
-</script>

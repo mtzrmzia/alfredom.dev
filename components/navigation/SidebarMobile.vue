@@ -1,48 +1,55 @@
 <template>
-  <USlideover v-model="modelValue" :ui="slideoverUI">
-    <div class="absolute right-0 mx-6 my-2">
-      <UButton
-        class="rounded-full"
-        variant="ghost"
-        color="gray"
-        size="xl"
-        trailing-icon="heroicons:x-mark-16-solid"
-        aria-label="close sidebar"
-        role="button"
-        @click="modelValue = false"
-      />
-    </div>
-    <ul
-      class="margin-0 flex h-full flex-1 flex-col items-center justify-center space-y-5 text-2xl"
-    >
-      <li>
-        <NuxtLink
-          to="/"
-          class="text-gray-900 dark:text-white hover:opacity-60 transition-opacity"
-          @click.self="closeSidebar"
-        >
-          {{ t('navigation.home.labelLink') }}
-        </NuxtLink>
-      </li>
-      <li>
-        <NuxtLink
-          to="/about"
-          class="text-gray-900 dark:text-white hover:opacity-60 transition-opacity"
-          @click.self="closeSidebar"
-        >
-          {{ t('navigation.about.labelLink') }}
-        </NuxtLink>
-      </li>
-      <li>
-        <NuxtLink
-          to="/photos"
-          class="text-gray-900 dark:text-white hover:opacity-60 transition-opacity"
-          @click.self="closeSidebar"
-        >
-          {{ t('navigation.photos.labelLink') }}
-        </NuxtLink>
-      </li>
-    </ul>
+  <USlideover
+    v-model:open="open"
+    :ui="slideoverUI"
+    title="Navigation menu"
+    description="Main site navigation"
+  >
+    <template #content>
+      <div class="absolute right-0 mx-6 my-2 border-0">
+        <UButton
+          class="rounded-full"
+          icon="heroicons:x-mark-16-solid"
+          size="md"
+          color="neutral"
+          variant="ghost"
+          aria-label="close sidebar"
+          role="button"
+          @click="open = false"
+        />
+      </div>
+      <ul
+        class="margin-0 flex h-full flex-1 flex-col items-center justify-center space-y-5 text-2xl"
+      >
+        <li>
+          <NuxtLink
+            to="/"
+            class="text-neutral-900 dark:text-white hover:opacity-60 transition-opacity"
+            @click.self="closeSidebar"
+          >
+            {{ t('navigation.home.labelLink') }}
+          </NuxtLink>
+        </li>
+        <li>
+          <NuxtLink
+            to="/about"
+            class="text-neutral-900 dark:text-white hover:opacity-60 transition-opacity"
+            @click.self="closeSidebar"
+          >
+            {{ t('navigation.about.labelLink') }}
+          </NuxtLink>
+        </li>
+        <li>
+          <NuxtLink
+            to="/photos"
+            class="text-neutral-900 dark:text-white hover:opacity-60 transition-opacity"
+            @click.self="closeSidebar"
+          >
+            {{ t('navigation.photos.labelLink') }}
+          </NuxtLink>
+        </li>
+      </ul>
+    </template>
   </USlideover>
 </template>
 
@@ -54,27 +61,15 @@ defineOptions({
 });
 
 const { t } = useI18n();
-const modelValue = defineModel({
+const open = defineModel({
   type: Boolean,
   default: true,
 });
 
 const slideoverUI = {
-  width: 'max-w-screen',
-  overlay: {
-    transition: {
-      enter: 'ease-in-out duration-150',
-      enterFrom: 'opacity-0',
-      enterTo: 'opacity-100',
-      leave: 'ease-in-out duration-150',
-      leaveFrom: 'opacity-100',
-      leaveTo: 'opacity-0',
-    },
-  },
-  transition: {
-    enter: 'transform transition ease-in-out duration-150',
-    leave: 'transform transition ease-in-out duration-150',
-  },
+  content: 'max-w-screen transform transition ease-in-out duration-150',
+  overlay:
+    'ease-in-out duration-150 data-[state=open]:opacity-100 data-[state=closed]:opacity-0',
 };
 
 const breakpoints = useBreakpoints(breakpointsTailwind);
@@ -85,15 +80,13 @@ watch(
   smaller,
   (value) => {
     if (value) {
-      modelValue.value = false;
+      open.value = false;
     }
   },
   { immediate: true },
 );
 
 function closeSidebar() {
-  modelValue.value = false;
-  // setTimeout(() => {
-  // }, 160);
+  open.value = false;
 }
 </script>

@@ -1,3 +1,11 @@
+<script setup lang="ts">
+defineOptions({
+  name: 'Photos',
+});
+
+usePageSeoTranslation('photos');
+</script>
+
 <template>
   <section>
     <div
@@ -19,11 +27,3 @@
     </div>
   </section>
 </template>
-
-<script setup lang="ts">
-defineOptions({
-  name: 'Photos',
-});
-
-usePageSeoTranslation('photos');
-</script>

@@ -1132,8 +1132,8 @@ onMounted(() => {
 
 .dark .map-travelling path {
   fill-rule: evenodd;
-  stroke: #000;
-  fill: rgb(32 32 32);
+  stroke: #171717;
+  fill: rgb(50 50 50);
 }
 
 .map-travelling path.visited {

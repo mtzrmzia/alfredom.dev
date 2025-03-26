@@ -30,30 +30,16 @@ export default defineNuxtConfig({
   modules: [
     // https://nuxt.com/modules/ui
     '@nuxt/ui',
-    // https://fonts.nuxt.com/
-    '@nuxt/fonts',
     // https://image.nuxt.com/
     '@nuxt/image',
     // https://i18n.nuxtjs.org/
     '@nuxtjs/i18n',
   ],
+  css: ['~/assets/css/main.css'],
   colorMode: {
-    classSuffix: '',
-    storageKey: 'color-mode',
     preference: 'system',
     fallback: 'light',
-  },
-  fonts: {
-    families: [
-      {
-        name: 'Inter',
-      },
-      {
-        name: 'Gloria Hallelujah',
-        styles: ['normal'],
-      },
-    ],
-    provider: 'google',
+    disableTransition: false,
   },
   image: {
     provider: 'imagekit',
@@ -71,15 +57,17 @@ export default defineNuxtConfig({
         language: 'en-US',
         name: 'English',
         file: 'en.json',
+        dir: 'ltr',
       },
       {
         code: 'es',
         language: 'es-MX',
         name: 'Español',
         file: 'es.json',
+        dir: 'ltr',
       },
     ],
-    defaultLocale: 'en',
+    defaultLocale: 'es',
     vueI18n: './i18n.config.ts',
     baseUrl: 'https://alfredom.dev',
     bundle: {

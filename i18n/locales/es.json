@@ -77,7 +77,8 @@
       }
     },
     "online": {
-      "title": "En línea"
+      "title": "En línea",
+      "copyEmailToast": "Email copiado al portapapeles"
     },
     "work": {
       "title": "Trabajo"

@@ -1,3 +1,12 @@
+<script setup lang="ts">
+defineOptions({
+  name: 'Index',
+});
+
+const { t } = useI18n();
+usePageSeoTranslation('home');
+</script>
+
 <template>
   <div class="m-[0_auto] max-w-4xl px-6 sm:px-4">
     <section class="my-12">
@@ -57,12 +66,3 @@
     </section>
   </div>
 </template>
-
-<script setup lang="ts">
-defineOptions({
-  name: 'Index',
-});
-
-const { t } = useI18n();
-usePageSeoTranslation('home');
-</script>

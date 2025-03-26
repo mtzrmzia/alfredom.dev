@@ -8,8 +8,8 @@
     >
       <li v-for="item in onlineItems" :key="item.label">
         <UButton
-          color="white"
-          variant="solid"
+          color="neutral"
+          variant="outline"
           :to="item.to"
           target="_blank"
           class="w-full flex items-center justify-center"

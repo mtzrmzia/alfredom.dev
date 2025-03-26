@@ -77,7 +77,8 @@
       }
     },
     "online": {
-      "title": "Online"
+      "title": "Online",
+      "copyEmailToast": "Email copied to clipboard"
     },
     "work": {
       "title": "Work"

@@ -1,47 +1,5 @@
-<template>
-  <ClientOnly>
-    <UPopover v-model:open="open" :ui="configUI" :popper="{ arrow: true }">
-      <UButton
-        v-bind="$attrs"
-        class="rounded-full"
-        variant="ghost"
-        color="gray"
-        size="md"
-        role="button"
-        :trailing-icon="icon"
-        :ui="buttonUI"
-      />
-      <template #panel>
-        <div
-          v-for="(item, index) in items"
-          :key="index"
-          :class="[
-            'relative select-none rounded-md py-2 px-5 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-900',
-            {
-              'bg-gray-100 dark:bg-gray-900':
-                isSelected(item.labelClass) && hoveredLabel === keyLabel,
-            },
-          ]"
-          @click.stop="onClick($event, item)"
-          @mouseover="hoveredLabel = item.labelClass || ''"
-          @mouseleave="hoveredLabel = keyLabel"
-        >
-          <span
-            :class="[
-              'block cursor-default truncate text-sm',
-              isSelected(item.labelClass) ? 'font-semibold' : 'font-normal',
-            ]"
-          >
-            {{ item.label }}
-          </span>
-        </div>
-      </template>
-    </UPopover>
-  </ClientOnly>
-</template>
-
 <script setup lang="ts">
-import type { DropdownItem } from '#ui/types';
+import type { DropdownMenuItem } from '#ui/types';
 
 defineOptions({
   name: 'CustomDropdown',
@@ -53,7 +11,7 @@ const props = defineProps({
     required: true,
   },
   items: {
-    type: Array as PropType<DropdownItem[]>,
+    type: Array as PropType<DropdownMenuItem[]>,
     default: () => [],
   },
   keyLabel: {
@@ -62,48 +20,16 @@ const props = defineProps({
   },
 });
 
-const buttonUI = {
-  base: 'group',
-  color: {
-    gray: {
-      ghost:
-        'dark:hover:text-white hover:bg-transparent dark:hover:bg-transparent hover:opacity-100 opacity-70 dark:opacity-80',
-    },
-  },
-};
-
 const { keyLabel } = toRefs(props);
 const open = ref(false);
 const hoveredLabel = ref<string>(keyLabel.value);
 
-const configUI = {
-  width: 'w-auto',
-  rounded: 'rounded-xl',
-  base: 'p-1.5',
-  background: 'bg-white dark:bg-gray-800',
-  transition: {
-    enterActiveClass: 'transition duration-100 ease-out',
-    enterFromClass: 'transform scale-95 opacity-0',
-    enterToClass: 'transform scale-100 opacity-100',
-    leaveActiveClass: 'transition duration-75 ease-in',
-    leaveFromClass: 'transform scale-100 opacity-100',
-    leaveToClass: 'transform scale-95 opacity-0',
-  },
-  arrow: {
-    base: 'invisible before:visible before:block before:rotate-45 before:z-[-1] before:w-2 before:h-2',
-    ring: 'before:ring-1 before:ring-gray-200 dark:before:ring-gray-700',
-    rounded: 'before:rounded-sm',
-    background: 'before:bg-white dark:before:bg-gray-700',
-    shadow: 'before:shadow',
-    placement:
-      "group-data-[popper-placement*='right']:-left-1 group-data-[popper-placement*='left']:-right-1 group-data-[popper-placement*='top']:-bottom-1 group-data-[popper-placement*='bottom']:-top-1",
-  },
+const customUI = {
+  content: 'p-1.5 dark:bg-(--ui-bg-elevated) bg-(--ui-bg) rounded-xl',
 };
 
-function onClick(event: MouseEvent, item: DropdownItem) {
-  if (item.click) {
-    item.click(event);
-  }
+function onClick(event: Event, item: DropdownMenuItem) {
+  item.onSelect?.(event);
   open.value = false;
 }
 
@@ -111,3 +37,44 @@ function isSelected(value = '') {
   return keyLabel.value === value;
 }
 </script>
+
+<template>
+  <ClientOnly>
+    <UPopover v-model:open="open" arrow :ui="customUI">
+      <UButton
+        v-bind="$attrs"
+        class="rounded-full"
+        variant="ghost"
+        color="neutral"
+        size="md"
+        role="button"
+        :trailing-icon="icon"
+      />
+      <template #content>
+        <div
+          v-for="(item, index) in items"
+          :key="index"
+          :class="[
+            'relative select-none rounded-md py-2 px-5 text-sm hover:bg-(--ui-bg-elevated) dark:hover:bg-(--ui-bg)',
+            {
+              'bg-(--ui-bg-elevated) dark:bg-(--ui-bg)':
+                isSelected(item.class) && hoveredLabel === keyLabel,
+            },
+          ]"
+          @click.stop="onClick($event, item)"
+          @mouseover="hoveredLabel = item.class || ''"
+          @mouseleave="hoveredLabel = keyLabel"
+        >
+          <span
+            :class="[
+              'block cursor-default truncate text-sm',
+              isSelected(item.class) ? 'font-semibold' : 'font-normal',
+            ]"
+          >
+            {{ item.label }}
+          </span>
+        </div>
+      </template>
+    </UPopover>
+  </ClientOnly>
+</template>

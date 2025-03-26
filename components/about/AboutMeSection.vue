@@ -1,3 +1,11 @@
+<script setup lang="ts">
+defineOptions({
+  name: 'AboutMeSection',
+});
+
+const { t } = useI18n();
+</script>
+
 <template>
   <section>
     <h1 class="my-6 text-xl font-bold">
@@ -74,11 +82,3 @@
     </div>
   </section>
 </template>
-
-<script setup lang="ts">
-defineOptions({
-  name: 'AboutMeSection',
-});
-
-const { t } = useI18n();
-</script>

@@ -1,7 +1,7 @@
 export const usePageSeoTranslation = (pageKey: string) => {
   const { t, locale } = useI18n();
 
-  const setMeta = () => {
+  watchEffect(() => {
     useSeoMeta({
       titleTemplate: 'Alfredo Martínez - %s',
       title: t(`meta.${pageKey}.title`),
@@ -12,8 +12,7 @@ export const usePageSeoTranslation = (pageKey: string) => {
       ogType: 'website',
       ogUrl: 'https://alfredom.dev',
       ogImageAlt: 'Alfredo Martínez',
+      ogLocale: locale.value.replace('-', '_'),
     });
-  };
-
-  watch(locale, setMeta, { immediate: true });
+  });
 };
