@@ -1,9 +1,9 @@
 <template>
   <footer
-    class="border-t border-solid border-gray-100 dark:border-gray-900 my-8"
+    class="border-t border-solid border-neutral-200 dark:border-neutral-800 my-8"
   >
     <div
-      class="m-[0_auto] max-w-4xl px-6 sm:px-4 dark:text-gray-400 text-gray-500"
+      class="m-[0_auto] max-w-4xl px-6 sm:px-4 dark:text-neutral-400 text-neutral-500"
     >
       <div class="flex items-center justify-center text-sm py-4 px-1">
         <span class="text-center">
@@ -21,7 +21,7 @@
             :to="item.to"
             :target="item.target"
             :aria-label="item.ariaLabel"
-            class="px-3 text-gray-500 transition-colors hover:text-gray-800 dark:hover:text-gray-400"
+            class="px-3 text-neutral-500 transition-colors hover:text-neutral-800 dark:hover:text-neutral-400"
           >
             <UIcon :name="item.icon" class="w-5 h-5" />
           </NuxtLink>
@@ -41,7 +41,7 @@ const currentYear = ref(new Date().getFullYear());
 const navigationSocial = [
   {
     name: 'Twitter',
-    to: 'https://x.com/mtzrmz_ia',
+    to: 'https://x.com/mtzrmzia',
     target: '_blank',
     icon: 'ri:twitter-x-fill',
     ariaLabel: 'Twitter',

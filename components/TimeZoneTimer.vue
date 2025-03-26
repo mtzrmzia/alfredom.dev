@@ -1,19 +1,3 @@
-<template>
-  <div class="flex text-sm lowercase dark:text-gray-400 text-gray-500">
-    <span class="block w-[62px] whitespace-nowrap">{{ date }}</span>
-    <div class="flex gap-1.5">
-      <span>·</span>
-      <a
-        target="_blank"
-        rel="noopener noreferrer nofollow"
-        href="https://maps.apple.com/place?q=Le%C3%B3n&ll=21.1222267%2C-101.6632405&auid=5521045738737275844&lsp=7618&address=Le%C3%B3n%2C%20Gto.%2C%20M%C3%A9xico"
-      >
-        León, México
-      </a>
-    </div>
-  </div>
-</template>
-
 <script setup lang="ts">
 defineOptions({
   name: 'TimeZoneTimer',
@@ -34,3 +18,19 @@ onMounted(() => {
   onUnmounted(() => clearInterval(timer));
 });
 </script>
+
+<template>
+  <div class="flex text-sm lowercase dark:text-neutral-400 text-neutral-500">
+    <span class="block w-[62px] whitespace-nowrap">{{ date }}</span>
+    <div class="flex gap-1.5">
+      <span>·</span>
+      <a
+        target="_blank"
+        rel="noopener noreferrer nofollow"
+        href="https://maps.apple.com/place?q=Le%C3%B3n&ll=21.1222267%2C-101.6632405&auid=5521045738737275844&lsp=7618&address=Le%C3%B3n%2C%20Gto.%2C%20M%C3%A9xico"
+      >
+        León, México
+      </a>
+    </div>
+  </div>
+</template>

@@ -1,3 +1,11 @@
+<script setup lang="ts">
+defineOptions({
+  name: 'Photos',
+});
+
+usePageSeoTranslation('photos');
+</script>
+
 <template>
   <section>
     <div
@@ -19,17 +27,3 @@
     </div>
   </section>
 </template>
-
-<script setup lang="ts">
-defineOptions({
-  name: 'Photos',
-});
-
-const { t } = useI18n();
-
-useSeoMeta({
-  title: () => t('navigation.photos.title'),
-  ogTitle: () => t('navigation.photos.ogTitle'),
-  ogUrl: 'https://alfredom.dev/photos',
-});
-</script>

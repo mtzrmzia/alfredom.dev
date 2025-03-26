@@ -1,41 +1,3 @@
-<template>
-  <section>
-    <h2 class="my-6 text-lg font-bold">
-      {{ t('about.work.title') }}
-    </h2>
-    <div
-      v-for="item in workItems"
-      :key="item.position"
-      class="flex items-start"
-    >
-      <NuxtImg
-        :src="item.logo"
-        fit="contain"
-        width="42"
-        height="42"
-        format="webp"
-        :placeholder="42"
-        class="rounded-xl sm:block hidden"
-        :alt="item.company"
-      />
-      <div class="flex grow flex-col">
-        <NuxtLink
-          :to="item.to"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="flex items-start pb-2 transition-opacity hover:opacity-50"
-        >
-          <div class="grow pb-3 sm:px-4">
-            <p class="font-medium">{{ item.position }}</p>
-            <p class="opacity-50">{{ item.company }}</p>
-          </div>
-          <span class="opacity-90">{{ item.time }}</span>
-        </NuxtLink>
-      </div>
-    </div>
-  </section>
-</template>
-
 <script setup lang="ts">
 defineOptions({
   name: 'WorkSection',
@@ -88,3 +50,41 @@ const workItems = [
   },
 ];
 </script>
+
+<template>
+  <section>
+    <h2 class="my-6 text-lg font-bold">
+      {{ t('about.work.title') }}
+    </h2>
+    <div
+      v-for="item in workItems"
+      :key="item.position"
+      class="flex items-start"
+    >
+      <NuxtImg
+        :src="item.logo"
+        fit="contain"
+        width="42"
+        height="42"
+        format="webp"
+        :placeholder="42"
+        class="rounded-xl sm:block hidden"
+        :alt="item.company"
+      />
+      <div class="flex grow flex-col">
+        <NuxtLink
+          :to="item.to"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="flex items-start pb-2 transition-opacity hover:opacity-50"
+        >
+          <div class="grow pb-3 sm:px-4">
+            <p class="font-medium">{{ item.position }}</p>
+            <p class="opacity-50">{{ item.company }}</p>
+          </div>
+          <span class="opacity-90">{{ item.time }}</span>
+        </NuxtLink>
+      </div>
+    </div>
+  </section>
+</template>

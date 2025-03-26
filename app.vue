@@ -1,18 +1,22 @@
-<template>
-  <Html :lang="head.htmlAttrs.lang" :dir="head.htmlAttrs.dir">
-    <div
-      class="min-h-screen dark:bg-[rgb(5,5,5)] dark:text-gray-200 text-gray-800"
-    >
-      <NuxtLayout>
-        <NuxtPage />
-      </NuxtLayout>
-      <UNotifications />
-    </div>
-  </Html>
-</template>
-
 <script setup lang="ts">
+import * as locales from '@nuxt/ui/locale';
+
+const { locale } = useI18n();
+
+const head = useLocaleHead({
+  key: 'id',
+});
+
+const lang = computed(() => unref(head).htmlAttrs?.lang);
+const dir = computed(
+  () => unref(head).htmlAttrs?.dir as 'ltr' | 'rtl' | 'auto',
+);
+
 useHead({
+  htmlAttrs: {
+    lang,
+    dir,
+  },
   meta: [
     {
       name: 'viewport',
@@ -20,50 +24,17 @@ useHead({
         'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no',
     },
   ],
-  link: [
-    {
-      rel: 'icon',
-      type: 'image/png',
-      sizes: '32x32',
-      href: '/favicon-light.png',
-    },
-  ],
-});
-
-const head = useLocaleHead({
-  addDirAttribute: true,
-  identifierAttribute: 'id',
-  addSeoAttributes: true,
-});
-
-useSeoMeta({
-  titleTemplate: 'Alfredo Martínez - %s',
-  title: 'FrontEnd Engineer',
-  ogTitle: 'Alfredo Martínez - FrontEnd Engineer',
-  description:
-    "I'm a Software FrontEnd Engineer based in México, that loves to code and build stunning digital products on the web.",
-  ogDescription:
-    "I'm a Software FrontEnd Engineer based in México, that loves to code and build stunning digital products on the web.",
-  ogType: 'website',
-  ogUrl: 'https://alfredom.dev',
-  ogSiteName: 'Alfredo Martínez',
-  ogImageAlt: 'Alfredo Martínez',
 });
 </script>
 
-<style>
-.page-enter-active,
-.page-leave-active {
-  transition: all 0.2s;
-}
-
-.page-leave-to {
-  opacity: 0;
-  transform: translateY(-5px);
-}
-
-.page-enter-from {
-  opacity: 0;
-  transform: translateY(5px);
-}
-</style>
+<template>
+  <UApp :locale="locales[locale]">
+    <div
+      class="min-h-screen dark:text-neutral-200 text-neutral-800 selection:bg-primary-300 selection:text-primary-900"
+    >
+      <NuxtLayout>
+        <NuxtPage />
+      </NuxtLayout>
+    </div>
+  </UApp>
+</template>

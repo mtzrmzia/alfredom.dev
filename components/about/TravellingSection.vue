@@ -1,3 +1,11 @@
+<script setup lang="ts">
+defineOptions({
+  name: 'TravellingSection',
+});
+
+const { t } = useI18n();
+</script>
+
 <template>
   <section>
     <h1 class="my-6 text-xl font-bold">
@@ -21,10 +29,10 @@
           <div class="relative mr-2 flex h-2 w-2">
             <span
               class="absolute inline-flex h-full w-full animate-ping rounded-full opacity-75 bg-neutral-500"
-            ></span
-            ><span
+            />
+            <span
               class="relative inline-flex h-2 w-2 rounded-full bg-neutral-500"
-            ></span>
+            />
           </div>
           {{ t('about.travelling.indicators.visited') }}
         </div>
@@ -34,10 +42,9 @@
           <div class="relative mr-2 flex h-2 w-2">
             <span
               class="absolute inline-flex h-full w-full animate-ping rounded-full opacity-75 bg-sky-500"
-            ></span
-            ><span
+            /><span
               class="relative inline-flex h-2 w-2 rounded-full bg-primary-500"
-            ></span>
+            />
           </div>
           {{ t('about.travelling.indicators.home') }}
         </div>
@@ -46,11 +53,3 @@
     <WorldMap />
   </section>
 </template>
-
-<script setup lang="ts">
-defineOptions({
-  name: 'TravellingSection',
-});
-
-const { t } = useI18n();
-</script>

@@ -1,6 +1,6 @@
 <template>
   <header
-    class="sticky top-0 z-10 border-b border-solid border-gray-100 bg-white/75 py-2 dark:border-gray-900 dark:bg-black/75 sm:py-3 backdrop-blur-md h-[61px]"
+    class="sticky top-0 z-10 border-b border-solid border-neutral-200 bg-white/75 dark:bg-neutral-900/75 py-2 dark:border-neutral-800 sm:py-3 backdrop-blur h-[62px]"
   >
     <div class="m-[0_auto] max-w-4xl px-6 sm:px-4">
       <nav class="flex items-center justify-between font-semibold">
@@ -14,23 +14,15 @@
             <li>
               <NuxtLink
                 to="/about"
-                class="text-gray-900 dark:text-white hover:opacity-60 transition-opacity"
+                class="text-neutral-900 dark:text-white hover:opacity-60 transition-opacity"
               >
                 {{ t('navigation.about.labelLink') }}
               </NuxtLink>
             </li>
             <li>
               <NuxtLink
-                to="/"
-                class="text-gray-900 dark:text-white hover:opacity-60 transition-opacity"
-              >
-                {{ t('navigation.blog.labelLink') }}
-              </NuxtLink>
-            </li>
-            <li>
-              <NuxtLink
                 to="/photos"
-                class="text-gray-900 dark:text-white hover:opacity-60 transition-opacity"
+                class="text-neutral-900 dark:text-white hover:opacity-60 transition-opacity"
               >
                 {{ t('navigation.photos.labelLink') }}
               </NuxtLink>
@@ -39,7 +31,7 @@
           <UButton
             class="rounded-full sm:hidden"
             variant="ghost"
-            color="gray"
+            color="neutral"
             size="md"
             trailing-icon="hugeicons:menu-03"
             aria-label="open sidebar"

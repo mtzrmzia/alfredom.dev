@@ -1,14 +1,3 @@
-<template>
-  <UButton
-    color="white"
-    variant="solid"
-    class="w-full flex items-center justify-center"
-    @click="copy(source)"
-  >
-    Email
-  </UButton>
-</template>
-
 <script setup lang="ts">
 import { useClipboard } from '@vueuse/core';
 
@@ -17,6 +6,7 @@ defineOptions({
 });
 
 const toast = useToast();
+const { t } = useI18n();
 const source = ref('hello@alfredom.dev');
 
 const { copy, copied } = useClipboard({
@@ -28,11 +18,23 @@ const { copy, copied } = useClipboard({
 watch(copied, (value) => {
   if (value) {
     toast.add({
-      description: 'Email copied to clipboard',
+      description: t('about.online.copyEmailToast'),
       icon: 'i-heroicons-check-circle',
-      color: 'gray',
-      timeout: 2500,
+      color: 'primary',
+      duration: 1500,
+      close: false,
     });
   }
 });
 </script>
+
+<template>
+  <UButton
+    color="neutral"
+    variant="outline"
+    class="w-full flex items-center justify-center"
+    @click="copy(source)"
+  >
+    Email
+  </UButton>
+</template>

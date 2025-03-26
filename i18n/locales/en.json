@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "home": {
+      "title": "FrontEnd Engineer",
+      "ogTitle": "Crafting stunning web experiences from Mexico 🌎",
+      "description": "I build fast, user-focused digital products with clean design and solid performance.",
+      "ogDescription": "I turn ideas into sleek, scalable web experiences that truly connect."
+    },
+    "about": {
+      "title": "About Me",
+      "description": "Learn more about my background, skills, and what drives me as a developer.",
+      "ogTitle": "Who is Alfredo Martínez?",
+      "ogDescription": "A closer look at the developer behind the pixels."
+    },
+    "photos": {
+      "title": "Photography",
+      "description": "A visual diary of the places, people, and moments that inspire me.",
+      "ogTitle": "Through My Lens",
+      "ogDescription": "Explore the world as I see it — one photo at a time."
+    }
+  },
+  "navigation": {
+    "colorMode": {
+      "light": "Light",
+      "dark": "Dark",
+      "system": "System"
+    },
+    "home": {
+      "labelLink": "Home"
+    },
+    "about": {
+      "labelLink": "About"
+    },
+    "photos": {
+      "labelLink": "Photos"
+    },
+    "footer": {
+      "disclaimer": "This site is unfinished. Just like my to-do list."
+    }
+  },
+  "home": {
+    "greeting": "Hey, I'm Alfredo Martínez",
+    "paragraph1": {
+      "text": "{based} {code} {and}",
+      "based": "I'm a FrontEnd software engineer based in Mexico.",
+      "code": " I code",
+      "and": " and create stunning digital products on the web."
+    },
+    "paragraph2": {
+      "text": "I love helping other developers become FrontEnd experts. I'm currently at {company}.",
+      "company": "Pemex"
+    }
+  },
+  "about": {
+    "main": {
+      "title": "About me",
+      "p1": {
+        "text": "{hey} {been}",
+        "hey": "Hey there! 👋🏾.",
+        "been": "I'm Alfredo. I've been coding for 8 years. As a FrontEnd Engineer, I specialize in building stunning digital products using the Vue, Nuxt, and TailwindCSS ecosystem."
+      },
+      "p2": {
+        "text": "I currently work at {pemex} {pemexWork} {before} {devSalsa} {building} {joinBrands} {joinBrandsWork}",
+        "pemex": "Pemex",
+        "pemexWork": "as a FrontEnd Web Engineer, building a platform for contract management.",
+        "before": "Before that, I worked at",
+        "devSalsa": "Dev Salsa",
+        "building": "developing",
+        "joinBrands": "joinbrands,",
+        "joinBrandsWork": " a platform for content creators."
+      },
+      "p3": "I am passionate about working at the intersection of product, engineering, and developer experience. I get excited by TailwindCSS, Vue, serverless technologies, Open Source, frontend simplicity, and minimalism. I love automating processes, building user-centric products, and enjoying a good cappuccino during a productive workday.",
+      "p4": "I was born and raised in León, Guanajuato, Mexico, where I studied Computer Systems Engineering.",
+      "p5": {
+        "text": "Outside of work, I love playing sports, attending concerts, walking with Puppy, and {travelling}",
+        "travelling": "travelling"
+      }
+    },
+    "online": {
+      "title": "Online",
+      "copyEmailToast": "Email copied to clipboard"
+    },
+    "work": {
+      "title": "Work"
+    },
+    "travelling": {
+      "title": "Travelling",
+      "p1": "I've been lucky enough to discover many countries around the world.",
+      "p2": "These are the ones that I visited.",
+      "indicators": {
+        "visited": "Visited",
+        "home": "Home"
+      }
+    }
+  }
+}
