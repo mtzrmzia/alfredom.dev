@@ -1,12 +1,16 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  devServer: {
-    https: {
-      key: './certificates/alfredom.dev.test-key.pem',
-      cert: './certificates/alfredom.dev.test.pem',
-    },
-    host: 'alfredom.dev.test',
-  },
+  ...(process.env.NITRO_HOST
+    ? {
+        devServer: {
+          https: {
+            key: './certificates/alfredom.dev.test-key.pem',
+            cert: './certificates/alfredom.dev.test.pem',
+          },
+          host: process.env.NITRO_HOST,
+        },
+      }
+    : {}),
   experimental: {
     typedPages: true,
   },

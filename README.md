@@ -1,75 +1,14 @@
-# Nuxt 3 Minimal Starter
+# [alfredom.dev](https://alfredom.dev)
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+**Alfredo Martínez** site, built with [Nuxt 3](https://nuxt.com/), [Nuxt UI](https://ui.nuxt.com/)
+and [Tailwind 4](https://tailwindcss.com/). This is the
+spicy secret behind `alfredom.dev`.
 
-## Setup
+## Development
 
-Make sure to install the dependencies:
-
-```bash
-# npm
-npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
+To run the project locally, clone the repository, install the dependencies and run the dev server.
 
 ```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
+git clone git@github.com:mtzrmzia/alfredom.dev.git
+yarn install && yarn dev
 ```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
