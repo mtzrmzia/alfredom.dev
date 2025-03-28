@@ -13,6 +13,11 @@ export const usePageSeoTranslation = (pageKey: string) => {
       ogUrl: 'https://alfredom.dev',
       ogImageAlt: 'Alfredo Martínez',
       ogLocale: locale.value.replace('-', '_'),
+      ogImage: `https://alfredom.dev/_og?title=${encodeURIComponent(t(`meta.${pageKey}.title`))}&description=${encodeURIComponent(t(`meta.${pageKey}.ogDescription`))}&url=${pageKey}`,
+      twitterTitle: t(`meta.${pageKey}.title`),
+      twitterDescription: t(`meta.${pageKey}.ogDescription`),
+      twitterImage: `https://alfredom.dev/_og?title=${encodeURIComponent(t(`meta.${pageKey}.title`))}&description=${encodeURIComponent(t(`meta.${pageKey}.ogDescription`))}&url=${pageKey}`,
+      twitterCard: 'summary_large_image',
     });
   });
 };

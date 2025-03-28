@@ -34,10 +34,12 @@ export default defineNuxtConfig({
   modules: [
     // https://nuxt.com/modules/ui
     '@nuxt/ui',
-    // https://image.nuxt.com/
+    // https://nuxt.com/modules/image
     '@nuxt/image',
-    // https://i18n.nuxtjs.org/
+    // https://nuxt.com/modules/i18n
     '@nuxtjs/i18n',
+    // https://nuxt.com/modules/og-image
+    'nuxt-og-image',
   ],
   css: ['~/assets/css/main.css'],
   colorMode: {
@@ -77,6 +79,10 @@ export default defineNuxtConfig({
     bundle: {
       optimizeTranslationDirective: false,
     },
+  },
+  site: {
+    url: 'https://alfredom.dev',
+    name: 'Alfredo Martínez',
   },
   compatibilityDate: '2024-04-03',
 });

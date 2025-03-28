@@ -3,7 +3,13 @@ defineOptions({
   name: 'Photos',
 });
 
+const { t } = useI18n();
 usePageSeoTranslation('photos');
+defineOgImageComponent('CustomOgImage', {
+  title: t('meta.photos.title'),
+  description: t('meta.photos.ogDescription'),
+  url: 'photos',
+});
 </script>
 
 <template>

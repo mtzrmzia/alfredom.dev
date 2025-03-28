@@ -21,6 +21,7 @@
     "@nuxt/ui": "^3.0.1",
     "@nuxtjs/i18n": "^9.4.0",
     "nuxt": "^3.16.1",
+    "nuxt-og-image": "^5.1.1",
     "vue": "latest"
   },
   "devDependencies": {

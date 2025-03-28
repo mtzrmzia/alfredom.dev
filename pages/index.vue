@@ -5,6 +5,10 @@ defineOptions({
 
 const { t } = useI18n();
 usePageSeoTranslation('home');
+defineOgImageComponent('CustomOgImage', {
+  title: 'Alfredo Martínez',
+  description: t('meta.home.ogDescription'),
+});
 </script>
 
 <template>
