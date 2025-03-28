@@ -40,6 +40,10 @@ export default defineNuxtConfig({
     '@nuxtjs/i18n',
     // https://nuxt.com/modules/og-image
     'nuxt-og-image',
+    // https://nuxt.com/modules/sitemap
+    '@nuxtjs/sitemap',
+    // https://nuxt.com/modules/robots
+    '@nuxtjs/robots',
   ],
   css: ['~/assets/css/main.css'],
   colorMode: {
