@@ -1,6 +1,6 @@
 <template>
   <header
-    class="sticky top-0 z-10 border-b border-solid border-neutral-200 bg-white/75 dark:bg-neutral-900/75 py-2 dark:border-neutral-800 sm:py-3 backdrop-blur h-[62px]"
+    class="sticky top-0 z-10 border-b border-solid border-neutral-200 bg-white/75 dark:bg-neutral-900/75 py-2 dark:border-neutral-800 sm:py-3 backdrop-blur-lg h-[62px]"
   >
     <div class="m-[0_auto] max-w-4xl px-6 sm:px-4">
       <nav class="flex items-center justify-between font-semibold">

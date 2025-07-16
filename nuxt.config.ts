@@ -1,20 +1,5 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  ...(process.env.NITRO_HOST
-    ? {
-        devServer: {
-          https: {
-            key: './certificates/alfredom.dev.test-key.pem',
-            cert: './certificates/alfredom.dev.test.pem',
-          },
-          host: process.env.NITRO_HOST,
-        },
-      }
-    : {}),
-  experimental: {
-    typedPages: true,
-  },
-  ssr: true,
   app: {
     head: {
       bodyAttrs: {
@@ -24,7 +9,7 @@ export default defineNuxtConfig({
     pageTransition: { name: 'page', mode: 'out-in' },
     layoutTransition: { name: 'page', mode: 'out-in' },
   },
-  devtools: { enabled: true },
+  devtools: { enabled: false },
   components: [
     {
       path: '~/components',
@@ -32,6 +17,8 @@ export default defineNuxtConfig({
     },
   ],
   modules: [
+    // https://nuxt.com/modules/eslint
+    '@nuxt/eslint',
     // https://nuxt.com/modules/ui
     '@nuxt/ui',
     // https://nuxt.com/modules/image
@@ -44,6 +31,8 @@ export default defineNuxtConfig({
     '@nuxtjs/sitemap',
     // https://nuxt.com/modules/robots
     '@nuxtjs/robots',
+    // https://nuxt.com/modules/vueuse
+    '@vueuse/nuxt',
   ],
   css: ['~/assets/css/main.css'],
   colorMode: {
@@ -54,7 +43,7 @@ export default defineNuxtConfig({
   image: {
     provider: 'imagekit',
     imagekit: {
-      baseURL: 'https://ik.imagekit.io/alfredom',
+      baseURL: process.env.IMAGEKIT_URL,
     },
   },
   i18n: {
@@ -79,13 +68,13 @@ export default defineNuxtConfig({
     ],
     defaultLocale: 'es',
     vueI18n: './i18n.config.ts',
-    baseUrl: 'https://alfredom.dev',
+    baseUrl: process.env.SITE_URL,
     bundle: {
       optimizeTranslationDirective: false,
     },
   },
   site: {
-    url: 'https://alfredom.dev',
+    url: process.env.SITE_URL,
     name: 'Alfredo Martínez',
   },
   compatibilityDate: '2024-04-03',

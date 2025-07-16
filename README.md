@@ -1,6 +1,6 @@
 # [alfredom.dev](https://alfredom.dev)
 
-**Alfredo Martínez** site, built with [Nuxt 3](https://nuxt.com/), [Nuxt UI](https://ui.nuxt.com/)
+**Alfredo Martínez** site, built with [Nuxt 4](https://nuxt.com/), [Nuxt UI](https://ui.nuxt.com/)
 and [Tailwind 4](https://tailwindcss.com/). This is the
 spicy secret behind `alfredom.dev`.
 

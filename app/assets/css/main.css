@@ -1,0 +1,49 @@
+@import 'tailwindcss';
+@import '@nuxt/ui';
+
+@theme {
+  --animate-wave: wave 1.2s ease infinite;
+  --font-sans: 'Inter', sans-serif;
+  --font-gloria: 'Gloria Hallelujah', var(--font-sans);
+
+  @keyframes wave {
+    0% {
+      transform: rotate(0deg);
+    }
+    10% {
+      transform: rotate(-10deg);
+    }
+    20% {
+      transform: rotate(12deg);
+    }
+    30% {
+      transform: rotate(-10deg);
+    }
+    40% {
+      transform: rotate(9deg);
+    }
+    50% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+}
+
+.wave {
+  animation: var(--animate-wave);
+}
+
+.page-enter-active,
+.page-leave-active {
+  @apply transition-all duration-200;
+}
+
+.page-enter-from {
+  @apply opacity-0 translate-y-1.5;
+}
+
+.page-leave-to {
+  @apply opacity-0 -translate-y-1.5;
+}

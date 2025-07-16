@@ -25,6 +25,3 @@ logs
 
 # SSL Certificates
 /certificates/
-
-# Fonts files
-.data
