@@ -22,18 +22,18 @@ const { t } = useI18n();
       </i18n-t>
 
       <i18n-t keypath="about.main.p2.text" tag="p" scope="global">
-        <template #pemex>
+        <template #charly>
           <NuxtLink
-            to="https://www.pemex.com/Paginas/default.aspx"
+            to="https://www.charly.com/"
             target="_blank"
             rel="noopener noreferrer"
             class="underline underline-offset-2"
           >
-            {{ t('about.main.p2.pemex') }}
+            {{ t('about.main.p2.charly') }}
           </NuxtLink>
         </template>
-        <template #pemexWork>
-          {{ t('about.main.p2.pemexWork') }}
+        <template #charlyWork>
+          {{ t('about.main.p2.charlyWork') }}
         </template>
         <template #before>
           {{ t('about.main.p2.before') }}

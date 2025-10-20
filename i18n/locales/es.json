@@ -48,7 +48,7 @@
     },
     "paragraph2": {
       "text": "Me encanta ayudar a otros desarrolladores a convertirse en expertos en FrontEnd. Actualmente trabajo en {company}",
-      "company": "Pemex"
+      "company": "Charly"
     }
   },
   "about": {
@@ -57,12 +57,12 @@
       "p1": {
         "text": "{hey} {been}",
         "hey": "¡Hola! 👋🏾.",
-        "been": "Soy Alfredo. Llevo 8 años programando. Como Ingeniero FrontEnd, me especializo en crear impresionantes productos digitales utilizando el ecosistema de Vue, Nuxt y TailwindCSS."
+        "been": "Soy Alfredo. Llevo 9 años programando. Como Ingeniero FrontEnd, me especializo en crear impresionantes productos digitales utilizando el ecosistema de Vue, Nuxt y TailwindCSS."
       },
       "p2": {
-        "text": "Actualmente trabajo en {pemex} {pemexWork} {before} {devSalsa} {building} {joinBrands} {joinBrandsWork}",
-        "pemex": "Pemex",
-        "pemexWork": "como Ingeniero Web FrontEnd, construyendo una plataforma para la gestión de contratos.",
+        "text": "Actualmente trabajo en {charly} {charlyWork} {before} {devSalsa} {building} {joinBrands} {joinBrandsWork}",
+        "charly": "Charly",
+        "charlyWork": "como Ingeniero Web FrontEnd, construyendo una plataforma para la gestión de contratos.",
         "before": "Antes de eso, trabajé en",
         "devSalsa": "Dev Salsa",
         "building": "desarrollando",

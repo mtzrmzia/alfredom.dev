@@ -55,7 +55,7 @@ defineOgImageComponent('CustomOgImage', {
             >
               <template #company>
                 <NuxtLink
-                  to="https://github.com/mtzrmzia"
+                  to="https://www.charly.com/"
                   target="_blank"
                   class="underline underline-offset-2"
                 >

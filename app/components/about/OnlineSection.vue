@@ -34,7 +34,7 @@ const { t } = useI18n();
 const onlineItems = [
   {
     label: 'Twitter',
-    to: 'https://x.com/mtzrmz_ia',
+    to: 'https://x.com/mtzrmzia',
   },
   {
     label: 'Github',

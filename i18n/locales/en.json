@@ -48,7 +48,7 @@
     },
     "paragraph2": {
       "text": "I love helping other developers become FrontEnd experts. I'm currently at {company}.",
-      "company": "Pemex"
+      "company": "Charly"
     }
   },
   "about": {
@@ -57,12 +57,12 @@
       "p1": {
         "text": "{hey} {been}",
         "hey": "Hey there! 👋🏾.",
-        "been": "I'm Alfredo. I've been coding for 8 years. As a FrontEnd Engineer, I specialize in building stunning digital products using the Vue, Nuxt, and TailwindCSS ecosystem."
+        "been": "I'm Alfredo. I've been coding for 9 years. As a FrontEnd Engineer, I specialize in building stunning digital products using the Vue, Nuxt, and TailwindCSS ecosystem."
       },
       "p2": {
-        "text": "I currently work at {pemex} {pemexWork} {before} {devSalsa} {building} {joinBrands} {joinBrandsWork}",
-        "pemex": "Pemex",
-        "pemexWork": "as a FrontEnd Web Engineer, building a platform for contract management.",
+        "text": "I currently work at {charly} {charlyWork} {before} {devSalsa} {building} {joinBrands} {joinBrandsWork}",
+        "charly": "Charly",
+        "charlyWork": "as a FrontEnd Web Engineer, building a platform for contract management.",
         "before": "Before that, I worked at",
         "devSalsa": "Dev Salsa",
         "building": "developing",

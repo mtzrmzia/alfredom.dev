@@ -8,8 +8,15 @@ const { t } = useI18n();
 const workItems = [
   {
     position: 'FrontEnd Web Engineer',
+    company: 'Charly',
+    time: '2025 - Now',
+    logo: '/about/work/charly.svg',
+    to: 'https://www.charly.com/',
+  },
+  {
+    position: 'FrontEnd Web Engineer',
     company: 'Pemex',
-    time: '2024 - Now',
+    time: '2024 - 2025',
     logo: '/about/work/pemex.svg',
     to: 'https://www.pemex.com/',
   },
