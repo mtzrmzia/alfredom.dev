@@ -57,6 +57,10 @@
       "dondecafe": {
         "description": "A platform to discover local coffee shops, save your favorites, and unlock promotions with participating cafés."
       }
+    },
+    "nowPlaying": {
+      "lastPlayed": "Last played",
+      "listening": "Now playing"
     }
   },
   "about": {

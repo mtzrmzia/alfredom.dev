@@ -16,7 +16,7 @@
           :to="item.to"
           :icon="item.icon"
           target="_blank"
-          class="w-full flex items-center justify-center"
+          class="w-full flex items-center justify-center rounded-lg"
         >
           {{ item.label }}
         </UButton>

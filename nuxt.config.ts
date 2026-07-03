@@ -90,5 +90,8 @@ export default defineNuxtConfig({
     url: process.env.SITE_URL,
     name: 'Alfredo Martínez',
   },
+  runtimeConfig: {
+    lastfmApiKey: '',
+  },
   compatibilityDate: '2024-04-03',
 });

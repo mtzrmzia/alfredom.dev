@@ -22,32 +22,29 @@ const { t } = useI18n();
           {{ t('about.travelling.p2') }}
         </p>
       </div>
-      <div class="flex space-x-2">
-        <div
-          class="flex items-center justify-center rounded-full border border-neutral-400 border-opacity-30 bg-transparent px-4 py-2 text-sm font-semibold text-neutral-700 opacity-100 dark:border-neutral-700 dark:text-neutral-200"
-        >
-          <div class="relative mr-2 flex h-2 w-2">
+      <div class="flex gap-2">
+        <UBadge color="neutral" variant="outline" size="lg" class="rounded-lg">
+          <span class="relative flex size-2">
             <span
-              class="absolute inline-flex h-full w-full animate-ping rounded-full opacity-75 bg-neutral-500"
+              class="absolute inline-flex h-full w-full animate-ping rounded-full bg-neutral-500 opacity-75"
             />
             <span
-              class="relative inline-flex h-2 w-2 rounded-full bg-neutral-500"
+              class="relative inline-flex size-2 rounded-full bg-neutral-500"
             />
-          </div>
+          </span>
           {{ t('about.travelling.indicators.visited') }}
-        </div>
-        <div
-          class="flex items-center justify-center rounded-full border border-neutral-400 border-opacity-30 bg-transparent px-4 py-2 text-sm font-semibold text-neutral-700 opacity-100 dark:border-neutral-700 dark:text-neutral-200"
-        >
-          <div class="relative mr-2 flex h-2 w-2">
+        </UBadge>
+        <UBadge color="neutral" variant="outline" size="lg" class="rounded-lg">
+          <span class="relative flex size-2">
             <span
-              class="absolute inline-flex h-full w-full animate-ping rounded-full opacity-75 bg-sky-500"
-            /><span
-              class="relative inline-flex h-2 w-2 rounded-full bg-primary-500"
+              class="absolute inline-flex h-full w-full animate-ping rounded-full bg-primary-500 opacity-75"
             />
-          </div>
+            <span
+              class="relative inline-flex size-2 rounded-full bg-primary-500"
+            />
+          </span>
           {{ t('about.travelling.indicators.home') }}
-        </div>
+        </UBadge>
       </div>
     </div>
     <WorldMap />

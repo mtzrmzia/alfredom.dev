@@ -12,7 +12,7 @@ defineOgImage('CustomOgImage', {
 </script>
 
 <template>
-  <div class="m-[0_auto] max-w-4xl px-6 sm:px-4">
+  <div class="m-[0_auto] max-w-4xl px-6 sm:px-4 h-full">
     <section class="my-12">
       <TimeZoneTimer />
       <div class="flex justify-between gap-8">
@@ -67,6 +67,7 @@ defineOgImage('CustomOgImage', {
               </template>
             </i18n-t>
           </div>
+          <NowPlaying class="mt-4" />
         </div>
         <MainAvatar classes="sm:block hidden h-44 w-44" />
       </div>

@@ -32,7 +32,7 @@ const projects = [
       <div
         v-for="project in projects"
         :key="project.name"
-        class="group overflow-hidden rounded-lg border border-neutral-200 dark:border-neutral-800"
+        class="group overflow-hidden rounded-lg border border-default"
       >
         <div
           class="aspect-video overflow-hidden bg-neutral-100 dark:bg-neutral-900"

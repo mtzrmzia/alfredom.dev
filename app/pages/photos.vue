@@ -30,6 +30,7 @@ defineOgImage('CustomOgImage', {
         decoding="auto"
         quality="80"
         :alt="`Photo ${index + 1} of 44 by Alfredo Martínez`"
+        class="rounded-lg"
       />
     </div>
   </section>

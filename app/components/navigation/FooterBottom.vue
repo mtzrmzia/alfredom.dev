@@ -1,7 +1,5 @@
 <template>
-  <footer
-    class="border-t border-solid border-neutral-200 dark:border-neutral-800 my-8"
-  >
+  <footer class="border-t border-default my-8">
     <div
       class="m-[0_auto] max-w-4xl px-6 sm:px-4 dark:text-neutral-400 text-neutral-500"
     >

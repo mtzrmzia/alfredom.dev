@@ -33,7 +33,7 @@ watch(copied, (value) => {
     color="neutral"
     variant="outline"
     icon="i-ri-mail-line"
-    class="w-full flex items-center justify-center"
+    class="w-full flex items-center justify-center rounded-lg"
     @click="copy(source)"
   >
     Email

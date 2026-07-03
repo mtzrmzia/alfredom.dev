@@ -57,6 +57,10 @@
       "dondecafe": {
         "description": "Plataforma para descubrir cafeterías locales, guardar tus favoritas y desbloquear promociones con las cafeterías participantes."
       }
+    },
+    "nowPlaying": {
+      "lastPlayed": "Última reproducción",
+      "listening": "Escuchando ahora"
     }
   },
   "about": {

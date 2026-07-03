@@ -3,9 +3,7 @@ import * as locales from '@nuxt/ui/locale';
 
 const { locale } = useI18n();
 
-const head = useLocaleHead({
-  key: 'id',
-});
+const head = useLocaleHead();
 
 const lang = computed(() => unref(head).htmlAttrs?.lang);
 const dir = computed(
@@ -38,7 +36,7 @@ useHead({
 <template>
   <UApp :locale="locales[locale]">
     <div
-      class="min-h-screen dark:text-neutral-200 text-neutral-800 selection:bg-primary-300 selection:text-primary-900"
+      class="min-h-screen selection:bg-primary-300 selection:text-primary-900"
     >
       <NuxtLayout>
         <NuxtPage />

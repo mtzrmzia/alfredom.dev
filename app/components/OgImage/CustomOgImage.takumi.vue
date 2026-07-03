@@ -1,6 +1,7 @@
 <template>
   <div
-    class="bg-white px-24 py-20 font-sans text-black flex flex-col justify-between antialiased"
+    class="bg-white px-24 py-20 text-black flex flex-col justify-between antialiased"
+    style="font-family: 'Geist', sans-serif"
   >
     <img
       src="https://ik.imagekit.io/alfredom/avatar/me-dark.png"

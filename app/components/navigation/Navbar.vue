@@ -1,15 +1,13 @@
 <template>
   <header
-    class="sticky top-0 z-10 border-b border-solid border-neutral-200 bg-white/75 dark:bg-neutral-900/75 py-2 dark:border-neutral-800 sm:py-3 backdrop-blur-lg h-[62px]"
+    class="sticky top-0 z-10 border-b border-default bg-white/75 dark:bg-neutral-900/75 py-2 sm:py-3 backdrop-blur-lg h-15.5"
   >
     <div class="m-[0_auto] max-w-4xl px-6 sm:px-4">
       <nav class="flex items-center justify-between font-semibold">
         <NuxtLink to="/">
           <MainAvatar />
         </NuxtLink>
-        <div
-          class="flex flex-row-reverse gap-3 items-center sm:flex-row h-[36px]"
-        >
+        <div class="flex flex-row-reverse gap-3 items-center sm:flex-row h-9">
           <ul class="hidden grid-flow-col gap-6 text-sm font-medium sm:grid">
             <li>
               <NuxtLink
