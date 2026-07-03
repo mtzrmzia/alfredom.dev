@@ -33,6 +33,8 @@ export default defineNuxtConfig({
     '@nuxtjs/robots',
     // https://nuxt.com/modules/vueuse
     '@vueuse/nuxt',
+    // https://nuxt.com/modules/fonts
+    '@nuxt/fonts',
   ],
   css: ['~/assets/css/main.css'],
   colorMode: {
@@ -46,8 +48,22 @@ export default defineNuxtConfig({
       baseURL: process.env.IMAGEKIT_URL,
     },
   },
+  fonts: {
+    families: [
+      {
+        name: 'Geist',
+        weights: [100, 200, 300, 400, 500, 600, 700, 800, 900],
+        global: true,
+      },
+      {
+        name: 'Fraunces',
+        weights: [500, 600, 700],
+        styles: ['normal', 'italic'],
+        global: true,
+      },
+    ],
+  },
   i18n: {
-    lazy: false,
     langDir: 'locales',
     strategy: 'no_prefix',
     locales: [
@@ -69,9 +85,6 @@ export default defineNuxtConfig({
     defaultLocale: 'es',
     vueI18n: './i18n.config.ts',
     baseUrl: process.env.SITE_URL,
-    bundle: {
-      optimizeTranslationDirective: false,
-    },
   },
   site: {
     url: process.env.SITE_URL,

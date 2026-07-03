@@ -5,7 +5,7 @@ defineOptions({
 
 const { t } = useI18n();
 usePageSeoTranslation('home');
-defineOgImageComponent('CustomOgImage', {
+defineOgImage('CustomOgImage', {
   title: 'Alfredo Martínez',
   description: t('meta.home.ogDescription'),
 });
@@ -17,8 +17,8 @@ defineOgImageComponent('CustomOgImage', {
       <TimeZoneTimer />
       <div class="flex justify-between gap-8">
         <div>
-          <h1 class="flex gap-2 pb-4 text-2xl">
-            <span class="font-bold">
+          <h1 class="flex gap-2 pb-4 text-4xl">
+            <span class="font-semibold">
               {{ t('home.greeting') }}
             </span>
             <span class="inline-block origin-[70%_70%] animate-wave">👋🏾</span>
@@ -34,13 +34,7 @@ defineOgImageComponent('CustomOgImage', {
                 {{ t('home.paragraph1.based') }}
               </template>
               <template #code>
-                <NuxtLink
-                  to="https://github.com/mtzrmzia"
-                  target="_blank"
-                  class="underline underline-offset-2"
-                >
-                  {{ t('home.paragraph1.code') }}
-                </NuxtLink>
+                {{ t('home.paragraph1.code') }}
               </template>
               <template #and>
                 {{ t('home.paragraph1.and') }}
@@ -55,11 +49,20 @@ defineOgImageComponent('CustomOgImage', {
             >
               <template #company>
                 <NuxtLink
-                  to="https://www.charly.com/"
+                  to="https://wa.me/524795053331"
                   target="_blank"
                   class="underline underline-offset-2"
                 >
                   {{ t('home.paragraph2.company') }}
+                </NuxtLink>
+              </template>
+              <template #project>
+                <NuxtLink
+                  to="https://dondecafe.com"
+                  target="_blank"
+                  class="underline underline-offset-2"
+                >
+                  {{ t('home.paragraph2.project') }}
                 </NuxtLink>
               </template>
             </i18n-t>
@@ -68,5 +71,6 @@ defineOgImageComponent('CustomOgImage', {
         <MainAvatar classes="sm:block hidden h-44 w-44" />
       </div>
     </section>
+    <FeaturedProjectsSection />
   </div>
 </template>

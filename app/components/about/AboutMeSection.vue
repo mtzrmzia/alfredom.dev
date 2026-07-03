@@ -8,7 +8,7 @@ const { t } = useI18n();
 
 <template>
   <section>
-    <h1 class="my-6 text-xl font-bold">
+    <h1 class="my-6 text-3xl font-semibold">
       {{ t('about.main.title') }}
     </h1>
     <div class="flex flex-col space-y-5">
@@ -22,6 +22,26 @@ const { t } = useI18n();
       </i18n-t>
 
       <i18n-t keypath="about.main.p2.text" tag="p" scope="global">
+        <template #bitlanlab>
+          <NuxtLink
+            to="https://wa.me/524795053331"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="underline underline-offset-2"
+          >
+            {{ t('about.main.p2.bitlanlab') }}
+          </NuxtLink>
+        </template>
+        <template #dondecafe>
+          <NuxtLink
+            to="https://dondecafe.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="underline underline-offset-2"
+          >
+            {{ t('about.main.p2.dondecafe') }}
+          </NuxtLink>
+        </template>
         <template #charly>
           <NuxtLink
             to="https://www.charly.com/"
@@ -32,11 +52,15 @@ const { t } = useI18n();
             {{ t('about.main.p2.charly') }}
           </NuxtLink>
         </template>
-        <template #charlyWork>
-          {{ t('about.main.p2.charlyWork') }}
-        </template>
-        <template #before>
-          {{ t('about.main.p2.before') }}
+        <template #pemex>
+          <NuxtLink
+            to="https://www.pemex.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="underline underline-offset-2"
+          >
+            {{ t('about.main.p2.pemex') }}
+          </NuxtLink>
         </template>
         <template #devSalsa>
           <NuxtLink
@@ -48,9 +72,6 @@ const { t } = useI18n();
             {{ t('about.main.p2.devSalsa') }}
           </NuxtLink>
         </template>
-        <template #building>
-          {{ t('about.main.p2.building') }}
-        </template>
         <template #joinBrands>
           <NuxtLink
             to="https://joinbrands.com/"
@@ -61,20 +82,14 @@ const { t } = useI18n();
             {{ t('about.main.p2.joinBrands') }}
           </NuxtLink>
         </template>
-        <template #joinBrandsWork>
-          {{ t('about.main.p2.joinBrandsWork') }}
-        </template>
       </i18n-t>
       <p>
         {{ t('about.main.p3') }}
       </p>
-      <p>
-        {{ t('about.main.p4') }}
-      </p>
-      <i18n-t keypath="about.main.p5.text" tag="p" scope="global">
+      <i18n-t keypath="about.main.p4.text" tag="p" scope="global">
         <template #travelling>
           <NuxtLink class="underline underline-offset-2" to="/photos">
-            {{ t('about.main.p5.travelling') }}
+            {{ t('about.main.p4.travelling') }}
           </NuxtLink>
         </template>
       </i18n-t>

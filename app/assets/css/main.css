@@ -3,7 +3,8 @@
 
 @theme {
   --animate-wave: wave 1.2s ease infinite;
-  --font-sans: 'Inter', sans-serif;
+  --font-sans: 'Geist', sans-serif;
+  --font-display: 'Fraunces', serif;
   --font-gloria: 'Gloria Hallelujah', var(--font-sans);
 
   @keyframes wave {
@@ -35,6 +36,14 @@
   animation: var(--animate-wave);
 }
 
+@layer base {
+  h1,
+  h2 {
+    font-family: var(--font-display), serif;
+    font-optical-sizing: auto;
+  }
+}
+
 .page-enter-active,
 .page-leave-active {
   @apply transition-all duration-200;
@@ -46,4 +55,14 @@
 
 .page-leave-to {
   @apply opacity-0 -translate-y-1.5;
+}
+
+@layer utilities {
+  .dark img[src*='dondecafe_light.png'] {
+    content: url('https://ik.imagekit.io/alfredom/projects/dondecafe_dark.png');
+  }
+
+  .dark img[src*='me-light.png'] {
+    content: url('https://ik.imagekit.io/alfredom/avatar/me-dark.png');
+  }
 }

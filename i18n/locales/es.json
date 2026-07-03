@@ -42,13 +42,21 @@
     "greeting": "Hey, soy Alfredo Martínez",
     "paragraph1": {
       "text": "{based} {code} {and}",
-      "based": "Soy un desarrollador FrontEnd radicado en México.",
-      "code": " Desarrollo software",
-      "and": " y creo experiencias digitales increíbles en la web."
+      "based": "Construyo",
+      "code": " productos web full-stack",
+      "and": " de principio a fin, obsesionado con los pequeños detalles que hacen que el software se sienta bien de usar."
     },
     "paragraph2": {
-      "text": "Me encanta ayudar a otros desarrolladores a convertirse en expertos en FrontEnd. Actualmente trabajo en {company}",
-      "company": "Charly"
+      "text": "Actualmente me dedico de tiempo completo a mi consultora de software {company}, y en mis ratos libres trabajo en un proyecto llamado {project}.",
+      "company": "Bitlanlab",
+      "project": "Dondecafe"
+    },
+    "projects": {
+      "title": "Proyectos destacados",
+      "openWeb": "Abrir web",
+      "dondecafe": {
+        "description": "Plataforma para descubrir cafeterías locales, guardar tus favoritas y desbloquear promociones con las cafeterías participantes."
+      }
     }
   },
   "about": {
@@ -57,31 +65,31 @@
       "p1": {
         "text": "{hey} {been}",
         "hey": "¡Hola! 👋🏾.",
-        "been": "Soy Alfredo. Llevo 9 años programando. Como Ingeniero FrontEnd, me especializo en crear impresionantes productos digitales utilizando el ecosistema de Vue, Nuxt y TailwindCSS."
+        "been": "Soy Alfredo. Llevo más de 10 años construyendo cosas para la web, desde sitios sencillos hasta plataformas completas para miles de usuarios. Como Ingeniero FrontEnd, me obsesiono con los pequeños detalles que hacen que un producto digital se sienta bien de usar, usando el ecosistema de Vue, Nuxt y TailwindCSS."
       },
       "p2": {
-        "text": "Actualmente trabajo en {charly} {charlyWork} {before} {devSalsa} {building} {joinBrands} {joinBrandsWork}",
+        "text": "Hoy me dedico de tiempo completo a {bitlanlab}, mi propia consultora de software, y en mis ratos libres desarrollo {dondecafe}, un proyecto propio que traigo entre manos. Antes trabajé en {charly}, donde migré tiendas a Shopify e integré Salesforce; en {pemex}, construyendo una plataforma de gestión de contratos; y en {devSalsa}, desarrollando {joinBrands}, una plataforma UGC para creadores de contenido.",
+        "bitlanlab": "Bitlanlab",
+        "dondecafe": "Dondecafe",
         "charly": "Charly",
-        "charlyWork": "como Ingeniero Web FrontEnd, construyendo una plataforma para la gestión de contratos.",
-        "before": "Antes de eso, trabajé en",
+        "pemex": "Pemex",
         "devSalsa": "Dev Salsa",
-        "building": "desarrollando",
-        "joinBrands": "joinbrands,",
-        "joinBrandsWork": " una plataforma para creadores de contenido."
+        "joinBrands": "joinbrands"
       },
-      "p3": "Me apasiona trabajar en la intersección de producto, ingeniería y experiencia del desarrollador. Me entusiasman TailwindCSS, Vue, tecnologías serverless, Open Source, la simplicidad del frontend y el minimalismo. Me encanta automatizar procesos, construir productos centrados en el usuario y disfrutar de un buen cappuccino durante una jornada de trabajo productiva.",
-      "p4": "Nací y crecí en León, Guanajuato, México y estudié Ingeniería en Sistemas Computacionales.",
-      "p5": {
-        "text": "Fuera del trabajo, me encanta hacer deporte, asistir a conciertos, pasear con Puppy y {travelling}",
+      "p3": "Me apasiona trabajar en la intersección de producto, ingeniería y experiencia del desarrollador. Me entusiasma el Open Source, la simplicidad del frontend y el minimalismo, y últimamente paso bastante tiempo jugando con IA, buscando cómo facilitarme la vida a mí y a las personas que usan lo que construyo. Me encanta automatizar procesos, construir productos centrados en el usuario y disfrutar de un buen cappuccino durante una jornada de trabajo productiva.",
+      "p4": {
+        "text": "Nací y crecí en León, Guanajuato, México, donde estudié Ingeniería en Sistemas Computacionales. Fuera del trabajo, me encanta hacer deporte, asistir a conciertos, pasear con Puppy y {travelling}.",
         "travelling": "viajar"
       }
     },
     "online": {
       "title": "En línea",
+      "description": "Si tienes un proyecto en mente, quieres colaborar o simplemente platicar de tecnología, me encantaría saber de ti.",
       "copyEmailToast": "Email copiado al portapapeles"
     },
     "work": {
-      "title": "Trabajo"
+      "title": "Trabajo",
+      "description": "Estas son las empresas y proyectos por los que he pasado a lo largo de mi carrera."
     },
     "travelling": {
       "title": "De viaje",

@@ -42,13 +42,21 @@
     "greeting": "Hey, I'm Alfredo Martínez",
     "paragraph1": {
       "text": "{based} {code} {and}",
-      "based": "I'm a FrontEnd software engineer based in Mexico.",
-      "code": " I code",
-      "and": " and create stunning digital products on the web."
+      "based": "I build",
+      "code": " full-stack web products",
+      "and": " end-to-end, obsessing over small details that make software feel right to use."
     },
     "paragraph2": {
-      "text": "I love helping other developers become FrontEnd experts. I'm currently at {company}.",
-      "company": "Charly"
+      "text": "I'm currently focused full-time on my software consultancy {company}, and in my free time I'm working on a project called {project}.",
+      "company": "Bitlanlab",
+      "project": "Dondecafe"
+    },
+    "projects": {
+      "title": "Featured projects",
+      "openWeb": "Open website",
+      "dondecafe": {
+        "description": "A platform to discover local coffee shops, save your favorites, and unlock promotions with participating cafés."
+      }
     }
   },
   "about": {
@@ -57,31 +65,31 @@
       "p1": {
         "text": "{hey} {been}",
         "hey": "Hey there! 👋🏾.",
-        "been": "I'm Alfredo. I've been coding for 9 years. As a FrontEnd Engineer, I specialize in building stunning digital products using the Vue, Nuxt, and TailwindCSS ecosystem."
+        "been": "I'm Alfredo. I've spent over 10 years building things for the web, from simple sites to full platforms used by thousands of people. As a FrontEnd Engineer, I obsess over the small details that make a digital product feel right to use, working across the Vue, Nuxt, and TailwindCSS ecosystem."
       },
       "p2": {
-        "text": "I currently work at {charly} {charlyWork} {before} {devSalsa} {building} {joinBrands} {joinBrandsWork}",
+        "text": "These days I'm focused full-time on {bitlanlab}, my own software consultancy, and in my free time I'm building {dondecafe}, a side project of mine. Before that I worked at {charly}, migrating stores to Shopify and integrating Salesforce; at {pemex}, building a contract management platform; and at {devSalsa}, developing {joinBrands}, a UGC platform for content creators.",
+        "bitlanlab": "Bitlanlab",
+        "dondecafe": "Dondecafe",
         "charly": "Charly",
-        "charlyWork": "as a FrontEnd Web Engineer, building a platform for contract management.",
-        "before": "Before that, I worked at",
+        "pemex": "Pemex",
         "devSalsa": "Dev Salsa",
-        "building": "developing",
-        "joinBrands": "joinbrands,",
-        "joinBrandsWork": " a platform for content creators."
+        "joinBrands": "joinbrands"
       },
-      "p3": "I am passionate about working at the intersection of product, engineering, and developer experience. I get excited by TailwindCSS, Vue, serverless technologies, Open Source, frontend simplicity, and minimalism. I love automating processes, building user-centric products, and enjoying a good cappuccino during a productive workday.",
-      "p4": "I was born and raised in León, Guanajuato, Mexico, where I studied Computer Systems Engineering.",
-      "p5": {
-        "text": "Outside of work, I love playing sports, attending concerts, walking with Puppy, and {travelling}",
+      "p3": "I am passionate about working at the intersection of product, engineering, and developer experience. I care about Open Source, frontend simplicity, and minimalism, and lately I've been spending a lot of time playing with AI, looking for ways to make life easier for myself and the people who use what I build. I love automating processes, building user-centric products, and enjoying a good cappuccino during a productive workday.",
+      "p4": {
+        "text": "I was born and raised in León, Guanajuato, Mexico, where I studied Computer Systems Engineering. Outside of work, I love playing sports, attending concerts, walking with Puppy, and {travelling}.",
         "travelling": "travelling"
       }
     },
     "online": {
       "title": "Online",
+      "description": "Whether you have a project in mind, want to collaborate, or just want to chat about tech, I'd love to hear from you.",
       "copyEmailToast": "Email copied to clipboard"
     },
     "work": {
-      "title": "Work"
+      "title": "Work",
+      "description": "These are the companies and projects I've been part of throughout my career."
     },
     "travelling": {
       "title": "Travelling",

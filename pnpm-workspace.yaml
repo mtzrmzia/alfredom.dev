@@ -1,0 +1,9 @@
+allowBuilds:
+  '@parcel/watcher': true
+  esbuild: true
+  sharp: true
+  unrs-resolver: true
+  vue-demi: true
+minimumReleaseAgeExclude:
+  - nuxt-og-image@6.7.2
+  - nuxtseo-shared@5.3.2

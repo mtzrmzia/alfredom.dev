@@ -4,7 +4,7 @@ defineOptions({
 });
 const { t } = useI18n();
 usePageSeoTranslation('about');
-defineOgImageComponent('CustomOgImage', {
+defineOgImage('CustomOgImage', {
   title: t('meta.about.title'),
   description: t('meta.about.ogDescription'),
   url: 'about',

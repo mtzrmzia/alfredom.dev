@@ -7,9 +7,16 @@ const { t } = useI18n();
 
 const workItems = [
   {
+    position: 'Founder',
+    company: 'Bitlanlab',
+    time: '2026 - Now',
+    logo: '/about/work/bitlanlab.png',
+    to: 'https://wa.me/524795053331',
+  },
+  {
     position: 'FrontEnd Web Engineer',
     company: 'Charly',
-    time: '2025 - Now',
+    time: '2025 - 2026',
     logo: '/about/work/charly.svg',
     to: 'https://www.charly.com/',
   },
@@ -60,9 +67,12 @@ const workItems = [
 
 <template>
   <section>
-    <h2 class="my-6 text-lg font-bold">
+    <h2 class="my-6 text-2xl font-semibold">
       {{ t('about.work.title') }}
     </h2>
+    <p class="mb-6 opacity-70">
+      {{ t('about.work.description') }}
+    </p>
     <div
       v-for="item in workItems"
       :key="item.position"

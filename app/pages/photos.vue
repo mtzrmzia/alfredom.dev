@@ -5,7 +5,7 @@ defineOptions({
 
 const { t } = useI18n();
 usePageSeoTranslation('photos');
-defineOgImageComponent('CustomOgImage', {
+defineOgImage('CustomOgImage', {
   title: t('meta.photos.title'),
   description: t('meta.photos.ogDescription'),
   url: 'photos',
@@ -28,6 +28,7 @@ defineOgImageComponent('CustomOgImage', {
         loading="lazy"
         ismap
         decoding="auto"
+        quality="80"
         :alt="`Photo ${index + 1} of 44 by Alfredo Martínez`"
       />
     </div>

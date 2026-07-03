@@ -32,6 +32,7 @@ watch(copied, (value) => {
   <UButton
     color="neutral"
     variant="outline"
+    icon="i-ri-mail-line"
     class="w-full flex items-center justify-center"
     @click="copy(source)"
   >
