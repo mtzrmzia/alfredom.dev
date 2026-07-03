@@ -16,7 +16,12 @@
         {{ description }}
       </p>
     </div>
-    <p class="text-[28px] font-mono text-black">{{ formattedUrl }}</p>
+    <p
+      class="text-[28px] text-black"
+      style="font-family: 'Geist Mono', monospace"
+    >
+      {{ formattedUrl }}
+    </p>
   </div>
 </template>
 

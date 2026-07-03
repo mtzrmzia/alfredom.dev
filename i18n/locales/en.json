@@ -2,15 +2,15 @@
   "meta": {
     "home": {
       "title": "Alfredo Martínez",
-      "ogTitle": "Crafting stunning web experiences from Mexico 🌎",
+      "ogTitle": "From ideas to real products",
       "description": "I build fast, user-focused digital products with clean design and solid performance.",
-      "ogDescription": "I turn ideas into sleek, scalable web experiences that truly connect."
+      "ogDescription": "Ideas turned into digital products — one detail at a time."
     },
     "about": {
       "title": "About Me",
       "description": "Learn more about my background, skills, and what drives me as a developer.",
-      "ogTitle": "Who is Alfredo Martínez?",
-      "ogDescription": "A closer look at the developer behind the pixels."
+      "ogTitle": "The developer behind the code",
+      "ogDescription": "My story, my projects, and what I'm passionate about building."
     },
     "photos": {
       "title": "Photography",

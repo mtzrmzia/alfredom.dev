@@ -61,6 +61,11 @@ export default defineNuxtConfig({
         styles: ['normal', 'italic'],
         global: true,
       },
+      {
+        name: 'Geist Mono',
+        weights: [400, 500, 600],
+        global: true,
+      },
     ],
   },
   i18n: {
