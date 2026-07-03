@@ -25,6 +25,7 @@
           <NuxtLink
             to="/"
             class="text-neutral-900 dark:text-white hover:opacity-60 transition-opacity"
+            exact-active-class="!text-primary"
             @click.self="closeSidebar"
           >
             {{ t('navigation.home.labelLink') }}
@@ -34,6 +35,7 @@
           <NuxtLink
             to="/about"
             class="text-neutral-900 dark:text-white hover:opacity-60 transition-opacity"
+            exact-active-class="!text-primary"
             @click.self="closeSidebar"
           >
             {{ t('navigation.about.labelLink') }}
@@ -43,6 +45,7 @@
           <NuxtLink
             to="/photos"
             class="text-neutral-900 dark:text-white hover:opacity-60 transition-opacity"
+            exact-active-class="!text-primary"
             @click.self="closeSidebar"
           >
             {{ t('navigation.photos.labelLink') }}
