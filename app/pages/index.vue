@@ -72,6 +72,7 @@ defineOgImage('CustomOgImage', {
         <MainAvatar classes="sm:block hidden h-44 w-44" />
       </div>
     </section>
+    <GitHubActivity />
     <FeaturedProjectsSection />
   </div>
 </template>

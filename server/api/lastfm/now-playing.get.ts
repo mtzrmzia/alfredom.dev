@@ -18,7 +18,7 @@ export default defineCachedEventHandler(
     const response = await $fetch<LastFmRecentTracksResponse>(
       'https://ws.audioscrobbler.com/2.0/',
       {
-        params: {
+        query: {
           method: 'user.getrecenttracks',
           user: LASTFM_USERNAME,
           api_key: lastfmApiKey,

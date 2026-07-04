@@ -91,6 +91,14 @@
       "description": "Si tienes un proyecto en mente, quieres colaborar o simplemente platicar de tecnología, me encantaría saber de ti.",
       "copyEmailToast": "Email copiado al portapapeles"
     },
+    "github": {
+      "title": "Actividad en GitHub",
+      "contributions": "contribuciones",
+      "contributionsOn": "{count} contribuciones el {date}",
+      "less": "Menos",
+      "more": "Más",
+      "scrollHint": "Desliza para ver más"
+    },
     "work": {
       "title": "Trabajo",
       "description": "Estas son las empresas y proyectos por los que he pasado a lo largo de mi carrera."

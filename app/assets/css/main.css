@@ -3,6 +3,8 @@
 
 @theme {
   --animate-wave: wave 1.2s ease infinite;
+  --animate-scroll-hint: scroll-hint 1.6s cubic-bezier(0.77, 0, 0.175, 1)
+    infinite;
   --font-sans: 'Geist', sans-serif;
   --font-display: 'Fraunces', serif;
   --font-gloria: 'Gloria Hallelujah', var(--font-sans);
@@ -30,10 +32,30 @@
       transform: rotate(0deg);
     }
   }
+
+  @keyframes scroll-hint {
+    0%,
+    100% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(5px);
+    }
+  }
 }
 
 .wave {
   animation: var(--animate-wave);
+}
+
+.scroll-hint {
+  animation: var(--animate-scroll-hint);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .scroll-hint {
+    animation: none;
+  }
 }
 
 @layer base {
@@ -58,6 +80,15 @@
 }
 
 @layer utilities {
+  .scrollbar-hide {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
   .dark img[src*='dondecafe_light.png'] {
     content: url('https://ik.imagekit.io/alfredom/projects/dondecafe_dark.png');
   }
