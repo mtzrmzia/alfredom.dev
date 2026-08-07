@@ -34,7 +34,7 @@ const photos = [
         v-for="photo in photos"
         :key="photo.src"
         :class="[
-          'relative aspect-3/4 select-none overflow-hidden rounded-xl border border-neutral-300 bg-white p-1 shadow-md shadow-black/10 transition-transform duration-200 ease-out hover:scale-105 hover:rotate-0 dark:bg-neutral-200',
+          'relative aspect-3/4 select-none rounded-xl border border-neutral-300 bg-white p-1 shadow-md shadow-black/10 transition-transform duration-200 ease-out hover:scale-105 hover:rotate-0 dark:bg-neutral-200',
           photo.class,
         ]"
       >
