@@ -39,7 +39,7 @@ const projects = [
 
 <template>
   <section class="my-12">
-    <h2 class="mb-6 text-2xl font-semibold">
+    <h2 class="mb-6 text-2xl font-bold">
       {{ t('home.projects.title') }}
     </h2>
     <div class="grid gap-6 sm:grid-cols-2">

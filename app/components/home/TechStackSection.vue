@@ -55,7 +55,7 @@ const stack: StackItem[] = [
 
 <template>
   <section class="my-12">
-    <h2 class="mb-6 text-2xl font-semibold">{{ t('home.stack.title') }}</h2>
+    <h2 class="mb-6 text-2xl font-bold">{{ t('home.stack.title') }}</h2>
     <ul class="group grid grid-cols-3 justify-center sm:grid-cols-6">
       <li
         v-for="item in stack"

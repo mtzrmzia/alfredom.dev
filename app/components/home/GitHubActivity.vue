@@ -101,7 +101,7 @@ const formatDate = (date: string) =>
 
 <template>
   <section v-if="data">
-    <h2 class="my-6 text-2xl font-semibold">
+    <h2 class="my-6 text-2xl font-bold">
       {{ t('about.github.title') }}
     </h2>
     <div class="scrollbar-hide overflow-x-auto">

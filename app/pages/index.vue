@@ -18,7 +18,7 @@ defineOgImage('CustomOgImage', {
       <div class="flex justify-between gap-8">
         <div>
           <h1 class="flex gap-2 pb-4 text-4xl">
-            <span class="font-semibold">
+            <span class="font-extrabold">
               {{ t('home.greeting') }}
             </span>
             <span class="inline-block origin-[70%_70%] animate-wave">👋🏾</span>

@@ -1,6 +1,6 @@
 <template>
   <section>
-    <h2 class="my-6 text-2xl font-semibold">
+    <h2 class="my-6 text-2xl font-bold">
       {{ t('about.online.title') }}
     </h2>
     <p class="mb-6 opacity-70">

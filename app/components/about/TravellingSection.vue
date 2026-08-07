@@ -8,7 +8,7 @@ const { t } = useI18n();
 
 <template>
   <section>
-    <h1 class="my-6 text-2xl font-semibold">
+    <h1 class="my-6 text-2xl font-extrabold">
       {{ t('about.travelling.title') }}
     </h1>
     <div

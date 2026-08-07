@@ -56,14 +56,8 @@ export default defineNuxtConfig({
         global: true,
       },
       {
-        name: 'Fraunces',
-        weights: [500, 600, 700],
-        styles: ['normal', 'italic'],
-        global: true,
-      },
-      {
         name: 'Geist Mono',
-        weights: [400, 500, 600],
+        weights: [400, 500, 600, 800],
         global: true,
       },
     ],
