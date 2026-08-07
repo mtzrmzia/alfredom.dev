@@ -28,7 +28,7 @@ const photos = [
 </script>
 
 <template>
-  <div class="overflow-x-clip px-3 py-6">
+  <div class="px-3 py-6">
     <div class="grid grid-cols-2 gap-4 md:grid-cols-4 md:gap-0 md:px-12">
       <div
         v-for="photo in photos"
