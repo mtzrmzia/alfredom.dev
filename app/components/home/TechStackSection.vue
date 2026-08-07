@@ -49,6 +49,7 @@ const stack: StackItem[] = [
     imageLight: '/stack/codex_light.svg',
     imageDark: '/stack/codex_dark.svg',
   },
+  { name: 'Raycast', imageLight: '/stack/raycast.svg' },
 ];
 </script>
 
