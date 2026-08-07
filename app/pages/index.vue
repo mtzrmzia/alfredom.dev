@@ -12,7 +12,7 @@ defineOgImage('CustomOgImage', {
 </script>
 
 <template>
-  <div class="m-[0_auto] max-w-4xl px-6 sm:px-4 h-full">
+  <div class="mx-auto max-w-4xl px-6 sm:px-4 h-full">
     <section class="my-12">
       <TimeZoneTimer />
       <div class="flex justify-between gap-8">
@@ -49,8 +49,9 @@ defineOgImage('CustomOgImage', {
             >
               <template #company>
                 <NuxtLink
-                  to="https://wa.me/524795053331"
+                  to="https://www.bitlanlab.com"
                   target="_blank"
+                  rel="noopener noreferrer"
                   class="underline underline-offset-2"
                 >
                   {{ t('home.paragraph2.company') }}

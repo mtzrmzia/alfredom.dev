@@ -24,7 +24,7 @@ const { t } = useI18n();
       <i18n-t keypath="about.main.p2.text" tag="p" scope="global">
         <template #bitlanlab>
           <NuxtLink
-            to="https://wa.me/524795053331"
+            to="https://www.bitlanlab.com"
             target="_blank"
             rel="noopener noreferrer"
             class="underline underline-offset-2"

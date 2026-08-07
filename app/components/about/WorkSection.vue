@@ -11,7 +11,7 @@ const workItems = [
     company: 'Bitlanlab',
     time: '2026 - Now',
     logo: '/about/work/bitlanlab.png',
-    to: 'https://wa.me/524795053331',
+    to: 'https://www.bitlanlab.com',
   },
   {
     position: 'FrontEnd Web Engineer',

@@ -12,7 +12,7 @@ defineOgImage('CustomOgImage', {
 </script>
 
 <template>
-  <div class="m-[0_auto] max-w-4xl px-6 sm:px-4">
+  <div class="mx-auto max-w-4xl px-6 sm:px-4">
     <AboutMeSection />
     <OnlineSection />
     <WorkSection />
