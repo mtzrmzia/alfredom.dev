@@ -61,6 +61,9 @@
         "description": "Plataforma para descubrir cafeterías locales, guardar tus favoritas y desbloquear promociones con las cafeterías participantes."
       }
     },
+    "stack": {
+      "title": "Stack técnico"
+    },
     "nowPlaying": {
       "lastPlayed": "Última reproducción",
       "listening": "Escuchando ahora"

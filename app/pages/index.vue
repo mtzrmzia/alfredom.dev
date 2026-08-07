@@ -74,5 +74,6 @@ defineOgImage('CustomOgImage', {
     </section>
     <GitHubActivity />
     <FeaturedProjectsSection />
+    <TechStackSection />
   </div>
 </template>
