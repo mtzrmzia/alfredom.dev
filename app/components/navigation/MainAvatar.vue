@@ -1,13 +1,6 @@
-<template>
-  <NuxtImg
-    src="/avatar/me-light.png"
-    format="webp"
-    alt="alfredo-avatar"
-    :class="[classes, 'rounded-full']"
-    loading="lazy"
-  />
-</template>
 <script setup lang="ts">
+defineOptions({ name: 'MainAvatar' });
+
 defineProps({
   classes: {
     type: String,
@@ -15,3 +8,14 @@ defineProps({
   },
 });
 </script>
+
+<template>
+  <ColorModeImage
+    alt="alfredo-avatar"
+    light="/avatar/me-light.png"
+    dark="/avatar/me-dark.png"
+    :width="undefined"
+    :height="undefined"
+    :class="[classes, 'rounded-full']"
+  />
+</template>

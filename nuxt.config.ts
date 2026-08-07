@@ -43,9 +43,9 @@ export default defineNuxtConfig({
     disableTransition: false,
   },
   image: {
-    provider: 'imagekit',
-    imagekit: {
-      baseURL: process.env.IMAGEKIT_URL,
+    provider: 'cloudflare',
+    cloudflare: {
+      baseURL: process.env.NUXT_CDN_BASE_URL,
     },
   },
   fonts: {

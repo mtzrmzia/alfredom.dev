@@ -88,12 +88,4 @@
   .scrollbar-hide::-webkit-scrollbar {
     display: none;
   }
-
-  .dark img[src*='dondecafe_light.png'] {
-    content: url('https://ik.imagekit.io/alfredom/projects/dondecafe_dark.png');
-  }
-
-  .dark img[src*='me-light.png'] {
-    content: url('https://ik.imagekit.io/alfredom/avatar/me-dark.png');
-  }
 }

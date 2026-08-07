@@ -54,6 +54,9 @@
     "projects": {
       "title": "Proyectos destacados",
       "openWeb": "Abrir web",
+      "bitlanlab": {
+        "description": "Aliado de software para startups y equipos digitales: diseñamos productos web, APIs e IA aplicada para llevar ideas a producción."
+      },
       "dondecafe": {
         "description": "Plataforma para descubrir cafeterías locales, guardar tus favoritas y desbloquear promociones con las cafeterías participantes."
       }

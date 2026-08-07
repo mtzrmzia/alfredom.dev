@@ -7,9 +7,23 @@ const { t } = useI18n();
 
 const projects = [
   {
+    name: 'BitlanLab',
+    descriptionKey: 'home.projects.bitlanlab.description',
+    imageLight: '/projects/bitlanlab_light.png',
+    imageDark: '/projects/bitlanlab_dark.png',
+    url: 'https://www.bitlanlab.com',
+    tags: [
+      { label: 'Nuxt', icon: 'devicon:nuxt' },
+      { label: 'Vue', icon: 'devicon:vuejs' },
+      { label: 'TailwindCSS', icon: 'devicon:tailwindcss' },
+      { label: 'Motion', icon: 'devicon:motion' },
+    ],
+  },
+  {
     name: 'Dondecafe',
     descriptionKey: 'home.projects.dondecafe.description',
     imageLight: '/projects/dondecafe_light.png',
+    imageDark: '/projects/dondecafe_dark.png',
     url: 'https://dondecafe.com',
     tags: [
       { label: 'Nuxt', icon: 'devicon:nuxt' },
@@ -32,22 +46,24 @@ const projects = [
       <div
         v-for="project in projects"
         :key="project.name"
-        class="group overflow-hidden rounded-lg border border-default"
+        class="group flex flex-col overflow-hidden rounded-lg border border-default"
       >
         <div
           class="aspect-video overflow-hidden bg-neutral-100 dark:bg-neutral-900"
         >
-          <NuxtImg
-            :src="project.imageLight"
+          <ColorModeImage
+            :light="project.imageLight"
+            :dark="project.imageDark"
             :alt="project.name"
             width="600"
             height="338"
             format="webp"
             fit="cover"
-            class="h-full w-full object-cover transition-transform duration-300 ease-out group-hover:scale-105"
+            class="h-full w-full"
+            img-class="object-cover transition-transform duration-300 ease-out group-hover:scale-105"
           />
         </div>
-        <div class="p-4">
+        <div class="flex grow flex-col p-4">
           <div class="flex items-start justify-between gap-2">
             <p class="font-medium">{{ project.name }}</p>
             <UTooltip :text="t('home.projects.openWeb')" :delay-duration="100">
@@ -67,7 +83,7 @@ const projects = [
           <p class="mt-1 text-sm opacity-70">
             {{ t(project.descriptionKey) }}
           </p>
-          <div class="mt-3 flex flex-wrap gap-3">
+          <div class="mt-auto flex flex-wrap gap-3 pt-3">
             <UIcon
               v-for="tag in project.tags"
               :key="tag.label"

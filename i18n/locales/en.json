@@ -54,6 +54,9 @@
     "projects": {
       "title": "Featured projects",
       "openWeb": "Open website",
+      "bitlanlab": {
+        "description": "A software partner for startups and digital teams: we design web products, APIs, and applied AI solutions to bring ideas to production."
+      },
       "dondecafe": {
         "description": "A platform to discover local coffee shops, save your favorites, and unlock promotions with participating cafés."
       }
